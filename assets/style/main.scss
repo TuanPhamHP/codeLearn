@@ -1,9 +1,10 @@
 // VARIABLES
 $primaryColor: #00c2c5;
-$darkGreyColor: #2b2b2b;
+$appBG: #f3f2f2;
+$darkGreyColor: #333333;
 $lightGreyColor: #3a4149;
 $darkBlueColor: #010021;
-$slightGreyColor: #676767;
+$slightGreyColor: #737373;
 $scale: 0.9;
 // HELPER
 .ytp-impression-link {
@@ -20,8 +21,11 @@ $scale: 0.9;
 }
 body {
 	overflow-x: hidden !important;
-	background-color: #fff;
+	background-color: $appBG;
 	color: #363434;
+	*:not(i) {
+		font-family: 'Roboto';
+	}
 	figure {
 		margin: 0;
 	}
@@ -136,6 +140,14 @@ body {
 	&:focus-within {
 		box-shadow: 0 0 0 0.2rem #00c2c591;
 		outline-color: #00c2c591;
+	}
+}
+.btn-no-outline {
+	&:focus,
+	&:active,
+	&:focus-within {
+		outline-color: transparent;
+		box-shadow: none;
 	}
 }
 // SHARED STYLE
