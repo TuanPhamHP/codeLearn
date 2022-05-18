@@ -1,0 +1,28 @@
+.footer-main__container{
+    border-bottom: 1px solid #ECECEC;
+}
+a.ft-block__content{
+    color: #333333;
+}
+.iconby{
+    width: 20px;
+}
+.footer-logo{
+    margin-bottom: 27px;
+    padding-left: 0;
+    width:209px
+}
+.download-app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.app-links a{
+    width:120px;
+}
+.connect-youtube{
+    width: 28px;
+}
+.connect-facebook{
+    width: 20px;
+}
