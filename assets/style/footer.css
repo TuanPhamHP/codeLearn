@@ -1,18 +1,6 @@
-.footer-main__container {
-	border-bottom: 1px solid #ececec;
-}
+
 a.ft-block__content {
 	color: #333333;
-	/* 
-        khai báo màu bên main.scss
-        viết helper-class để tái sử dụng phần này
-        Ex: 
-        $textDark : #333333;
-        .text-dark{
-            color:#333333;
-            caret: #333333;
-        }
-    */
 }
 .iconby {
 	width: 20px;
@@ -22,17 +10,8 @@ a.ft-block__content {
 	padding-left: 0;
 	width: 209px;
 }
-.download-app {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	/* 
-        bọn attribute này đã có các class sẵn trong bootstrap, không viết lại.
-    */
-}
-.app-links a {
+.app-links>a {
 	width: 120px;
-	/* không dùng tag-name selector, nếu dùng thì dùng kèm combinators nhé */
 }
 .connect-youtube {
 	width: 28px;
