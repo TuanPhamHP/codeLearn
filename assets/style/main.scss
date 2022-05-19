@@ -9,7 +9,7 @@ $textDark : #333333;
 $boderGreyColor: #ececec;
 $slightGreyColor: #737373;
 $scale: 0.9;
-$navbarBlueColor: #4086FF;
+$darkBlueColor: #4086FF;
 $navbarYellowColor: #FFA216;
 $lightBlueColor:#669eff;
 // HELPER
@@ -81,8 +81,8 @@ body {
 .boder-grey-color{
 	border-bottom: 1px solid $boderGreyColor;
 }
-.navbar-blue-color{
-	background-color: $navbarBlueColor !important;
+.dark-blue-color{
+	background-color: $darkBlueColor !important;
 }
 .bg-color-hover{
 	background-color: $navbarYellowColor;
@@ -185,12 +185,7 @@ body {
 }
 
 // HEADER
-li.each-tab-navigator:hover{
-    border-bottom: 3px solid $navbarBlueColor;
-    color: $navbarBlueColor;
-	// padding: 0;
-}
-.nav-item:hover{
+.item-active{
 	background-color: $navbarYellowColor;
 }
 .choose-class{
@@ -198,6 +193,12 @@ li.each-tab-navigator:hover{
 }
 .my-library{
 	background-color: $navbarYellowColor;
+}
+li.each-tab-navigator.active{
+    border-bottom: 3px solid $darkBlueColor;
+}
+li.each-tab-navigator.active>a{
+	color: $darkBlueColor !important;
 }
 
 .header {
@@ -291,10 +292,14 @@ li.each-tab-navigator:hover{
 	.footer-main__container{
 		min-width: 1280px;
 	}
+	.container{
+		min-width: 1280px;
+	}
 	.copyright-footer{
 		min-width: 1280px;
 	}
 }
+
 @media only screen and (max-width: 820px) {
 }
 @media only screen and (max-width: 560px) {

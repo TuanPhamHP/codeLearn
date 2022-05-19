@@ -23,20 +23,21 @@
 
 <body>
   <header>
-    <section id="header-top" class="navbar-blue-color font-size-16">
+    <section id="header-top" class="dark-blue-color font-size-16">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <nav class="navbar navbar-expand-xl p-0">
               <a href="#" class="navbar-brand">
                 <div class="logo">
-                  <img src="./assets/images/logo_colearn.png" height="41px" class="logo-header" alt="">
-                  <!-- Lấy ảnh vector, dùng file svg ấy. -->
-                  <!-- Thiếu icon menu-bar của anh -->
+                  <img src="./assets/images/logo-colearn.svg" height="41px" class="logo-header" alt="">
                 </div>
               </a>
+              <button class="btn navbar-toggler p-1 d-sm-none d-md-block">
+                <img src="./assets/images/icon/navbar.svg" alt=""class="navbar-toggler-icon-1 text-white">
+              </button>
               <button class="btn navbar-toggler" data-toggle='collapse' data-target='#main-nav'>
-                <span class="navbar-toggler-icon text-white"><img src="./assets/images/icon/navbar.svg" alt=""></span>
+                <span class="navbar-toggler-icon-2 text-white"><img src="./assets/images/icon/navbar.svg" alt=""></span>
               </button>
               <div class="collapse navbar-collapse" id="main-nav">
                 <!-- Space phía bên trái nó phải nhỏ hơn phía bên phải, mình đang bị ngược, sửa lại nha -->
@@ -50,8 +51,7 @@
                   <li class="nav-item fw-700">
                     <a class="nav-link text-white p-0" href="#">Lớp học</a>
                   </li>
-                  <li class="nav-item fw-700 show-submenu" id="item-active">
-                    <!-- Mặc định cho thằng này active cho anh, active là class không phải id -->
+                  <li class="nav-item fw-700 item-active">
                     <a class="nav-link text-white p-0" href="#">Thư viện
                     </a>
                   </li>
@@ -60,12 +60,15 @@
               <div class="notify">
                 <img src="./assets/images/icon/notify.svg" height="24px" class="notify-icon" title="Thông báo" alt="">
               </div>
-              <button class="choose-class">
-                <a class="class-name class-link text-white d-block" href="#">Lớp 12
-                  <!-- Làm thành dropdown nha -->
-                  <img src="./assets/images/icon/Polygon.svg" class="icon-down ml-1" alt="">
-                </a>
-              </button>
+              <div class="dropdown">
+                <button class="btn choose-class class-link d-block text-white dropdown-toggle" type="button" id="dropdownChooseClass" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Lớp 12
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownChooseClass">
+                  <a class="dropdown-item" href="#">Lớp 11</a>
+                  <a class="dropdown-item" href="#">Lớp 10</a>
+                </div>
+              </div>
               <div>
                 <img src="./assets/images/avt.png" height="36px" class="avatar" title="Avatar" alt="">
               </div>
@@ -75,37 +78,28 @@
         </div>
       </div>
     </section>
-    <section id="header-bottom" class="bg-white font-size-20">
-      <!-- Thiếu box-shadow nè -->
+    <section id="header-bottom" class="bg-white">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="d-flex align-items-start">
               <!-- Bị sai css về kích thước nè -->
-              <ul class="d-flex main-top-navigator mb-0">
-                <li class="each-tab-navigator"><a class="link-target text-dark" href="">Chuyên đề</a></li>
-                <!-- Mặc định 1 cái active cho anh -->
+              <ul class="d-flex main-top-navigator mb-0 font-size-20">
+                <li class="each-tab-navigator active"><a class="link-target text-dark" href="">Chuyên đề</a></li>
                 <li class="each-tab-navigator"><a class="link-target text-dark" href="">Tài liệu</a></li>
                 <li class="each-tab-navigator"><a class="link-target text-dark" href="">Trắc nghiệm</a></li>
-<<<<<<< HEAD
               </ul> 
-              <div class="my-library ml-auto">
-                <a class="library-link text-white fw-500 mr-1" href="#">
-                  <img src="./assets/images/icon/library.svg" alt="" class="mr-2">
-                  Thư viện của tôi
-                </a>
-              </div>           
-=======
-                <!-- Bị sai css về text + vị trí thanh divider nè  -->
-              </ul>
-              <button class="my-library ml-auto">
-                <a class="nav-link text-white fw-500" href="#">
-                  <img src="./assets/images/icon/library.svg" alt="" class="mr-2">
-                  Thư viện của tôi
-                </a>
-                <!-- Bị sai css về font + kích thước nè -->
-              </button>
->>>>>>> 398bf9934d17028e9d746d57f9a86535ac05dc0b
+              <div class="ml-auto">
+                <div class="my-library">
+                  <a class="library-link text-white fw-500 mx-1 font-size-16" href="#">
+                    <img src="./assets/images/icon/library.svg" alt="" class="mr-2">
+                    Thư viện của tôi
+                  </a>
+                </div>    
+              </div>
+                     
+<!-- Bị sai css vị trí thanh divider nè  -->               
+<!-- Bị sai kích thước nè -->   
             </div>
           </div>
 

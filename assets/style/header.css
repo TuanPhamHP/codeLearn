@@ -1,14 +1,18 @@
 
 .navbar-brand{
-    margin-right: 240px;
+    margin-right: 55px;
 }
 .nav-item{
     padding: 22px;
     line-height: 19px;
 }
-.nav-item:hover{
-    transition: 0.25s ease-in-out;
+img.navbar-toggler-icon-1{
+    margin-right: 140px;
 }
+.navbar-toggler-icon-2>img{
+    margin-right: 70px;
+}
+
 .choose-class{
     border-radius: 16px;
     border: none;
@@ -20,15 +24,14 @@
     margin-top: 1px;
     line-height: 19px;
 }
-.my-library{
-    padding: 8px 16px;
-    
-}
 .icon-down{
     padding: 1px;
 }
 .notify{
     margin-right: 20px;
+}
+#header-bottom{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 li.each-tab-navigator{
@@ -40,10 +43,14 @@ li.each-tab-navigator{
     line-height: 23px;
 }
 .my-library{
+    padding: 7px 16px;
     border-radius: 20px;
     border: none;
     margin-top: 14px;
     margin-bottom: 12px;
+}
+.library-link{
     line-height: 19px;
+
 }
 
