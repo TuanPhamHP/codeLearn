@@ -1,6 +1,12 @@
-
+.company-info{
+	line-height: 35px;
+}
+.ft-block-title{
+	margin-top: 10px;
+	line-height: 16px;
+}
 a.ft-block__content {
-	color: #333333;
+	line-height: 27px;
 }
 .iconby {
 	width: 20px;
@@ -19,4 +25,8 @@ a.ft-block__content {
 .connect-facebook {
 	width: 20px;
 }
+.copyright-footer{
+	padding: 2px;
+}
+
 /* Style cho các thẻ text nữa. font-* ,text-* đang không giống design */

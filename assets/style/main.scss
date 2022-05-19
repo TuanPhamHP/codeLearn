@@ -1,11 +1,13 @@
 // VARIABLES
 $primaryColor: #00c2c5;
-$darkGreyColor: #2b2b2b;
+$appBG: #f3f2f2;
+$darkGreyColor: #333333;
 $lightGreyColor: #3a4149;
 $darkBlueColor: #010021;
 $slightGreyColor: #676767;
 $textDark : #333333;      
 $boderGreyColor: #ececec;
+$slightGreyColor: #737373;
 $scale: 0.9;
 // HELPER
 .ytp-impression-link {
@@ -17,13 +19,16 @@ $scale: 0.9;
 	border-spacing: 0;
 	scroll-behavior: smooth;
 	&:not(i) {
-		font-family: 'Be Vietnam Pro', sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 }
 body {
 	overflow-x: hidden !important;
-	background-color: #fff;
+	background-color: $appBG;
 	color: #363434;
+	*:not(i) {
+		font-family: 'Roboto';
+	}
 	figure {
 		margin: 0;
 	}
@@ -39,9 +44,7 @@ body {
 		display: flex !important;
 	}
 }
-.fw-500 {
-	font-weight: 500;
-}
+
 .pointer {
 	cursor: pointer !important;
 }
@@ -78,6 +81,13 @@ body {
 
 .fw-500 {
 	font-weight: 500 !important;
+}
+.fw-900 {
+	font-weight: 900 !important;
+}
+.fw-400-italic {
+	font-weight: 400 !important;
+	font-style: italic !important;
 }
 .no-decoration {
 	text-decoration: none !important;
@@ -145,6 +155,14 @@ body {
 	&:focus-within {
 		box-shadow: 0 0 0 0.2rem #00c2c591;
 		outline-color: #00c2c591;
+	}
+}
+.btn-no-outline {
+	&:focus,
+	&:active,
+	&:focus-within {
+		outline-color: transparent;
+		box-shadow: none;
 	}
 }
 // SHARED STYLE

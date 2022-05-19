@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="./assets/style/main.css" />
+  <!-- SPEC -->
+  <link rel="stylesheet" href="./assets/style/home.css" />
 
 
 
@@ -23,7 +25,46 @@
 </head>
 
 <body>
+  <main>
+    <section class="container-fluid lib-inner-section">
+      <div class="container">
 
+        <button id="advance-filter-btn"
+          class="btn btn-advance-toggle-filter color-darkgrey fw-500 btn-no-outline d-flex align-items-center collapsed"
+          data-target="#advance-filter" aria-controls="advance-filter">
+          <img src="./assets/images/icon/settings.svg" height="26px" class="setting-icon" title="Hiển thị bộ lọc"
+            alt="">
+          <img src="./assets/images/icon/close-dark.svg" height="26px" class="close-icon" title="Ẩn bộ lọc" alt="">
+          Bộ lọc
+        </button>
+        <div class="py-3 d-flex">
+          <!-- FILTER -->
+          <div class="lib-inner-advance-filter" id="advance-filter">
+            <div class="side-filter-wr">
+              <div class="list-tag dv-e pb-3">
+                <div class="each-tag color-slightgrey  mb-2 d-flex align-items-center justify-content-between">Chân trời
+                  sáng tạo <img class="pointer" src="./assets/images/icon/close.svg" alt=""></div>
+                <div class="each-tag color-slightgrey  mb-2 d-flex align-items-center justify-content-between">Toán
+                  <img class="pointer" src="./assets/images/icon/close.svg" alt="">
+                </div>
+                <div class="each-tag  mb-2 d-flex align-items-center justify-content-between">Xóa tất cả
+                  <img class="pointer" src="./assets/images/icon/close.svg" alt="">
+                </div>
+              </div>
+              <div class="filter-cate pb-3 ">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- LIST DATA -->
+          <div class="list-data w-100">
+            HAHAHA
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- SCRIPT -->
   <!-- CDN -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,6 +77,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="./assets/js/home.js"></script>
 </body>
 
 </html>
