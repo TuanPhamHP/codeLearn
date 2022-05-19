@@ -9,6 +9,9 @@ $textDark : #333333;
 $boderGreyColor: #ececec;
 $slightGreyColor: #737373;
 $scale: 0.9;
+$navbarBlueColor: #4086FF;
+$navbarYellowColor: #FFA216;
+$lightBlueColor:#669eff;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -78,9 +81,18 @@ body {
 .boder-grey-color{
 	border-bottom: 1px solid $boderGreyColor;
 }
+.navbar-blue-color{
+	background-color: $navbarBlueColor !important;
+}
+.bg-color-hover{
+	background-color: $navbarYellowColor;
+}
 
 .fw-500 {
 	font-weight: 500 !important;
+}
+.fw-700 {
+	font-weight: 700 !important;
 }
 .fw-900 {
 	font-weight: 900 !important;
@@ -173,6 +185,21 @@ body {
 }
 
 // HEADER
+li.each-tab-navigator:hover{
+    border-bottom: 3px solid $navbarBlueColor;
+    color: $navbarBlueColor;
+	// padding: 0;
+}
+.nav-item:hover{
+	background-color: $navbarYellowColor;
+}
+.choose-class{
+	background-color: $lightBlueColor;
+}
+.my-library{
+	background-color: $navbarYellowColor;
+}
+
 .header {
 	height: 138px;
 	background-color: #fff;
@@ -262,6 +289,9 @@ body {
 }
 @media only screen and (min-width: 1200px) {
 	.footer-main__container{
+		min-width: 1280px;
+	}
+	.copyright-footer{
 		min-width: 1280px;
 	}
 }

@@ -85,8 +85,20 @@ body .hide-on-mobile-flex {
   border-bottom: 1px solid #ececec;
 }
 
+.navbar-blue-color {
+  background-color: #4086FF !important;
+}
+
+.bg-color-hover {
+  background-color: #FFA216;
+}
+
 .fw-500 {
   font-weight: 500 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
 }
 
 .fw-900 {
@@ -300,6 +312,23 @@ body .hide-on-mobile-flex {
   width: 0 !important;
 }
 
+li.each-tab-navigator:hover {
+  border-bottom: 3px solid #4086FF;
+  color: #4086FF;
+}
+
+.nav-item:hover {
+  background-color: #FFA216;
+}
+
+.choose-class {
+  background-color: #669eff;
+}
+
+.my-library {
+  background-color: #FFA216;
+}
+
 .header {
   height: 138px;
   background-color: #fff;
@@ -393,6 +422,9 @@ body .hide-on-mobile-flex {
 
 @media only screen and (min-width: 1200px) {
   .footer-main__container {
+    min-width: 1280px;
+  }
+  .copyright-footer {
     min-width: 1280px;
   }
 }
