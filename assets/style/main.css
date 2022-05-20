@@ -325,7 +325,7 @@ body .hide-on-mobile-flex {
 }
 
 li.each-tab-navigator.active {
-  border-bottom: 1px solid #4086FF;
+  border-bottom: 3px solid #4086FF;
 }
 
 li.each-tab-navigator.active > a {

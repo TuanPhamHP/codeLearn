@@ -6,11 +6,8 @@
     padding: 22px;
     line-height: 19px;
 }
-img.navbar-toggler-icon-1{
+.navbar-toggler-1{
     margin-right: 140px;
-}
-.navbar-toggler-icon-2>img{
-    margin-right: 70px;
 }
 
 .choose-class{

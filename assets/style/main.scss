@@ -195,7 +195,7 @@ body {
 	background-color: $navbarYellowColor;
 }
 li.each-tab-navigator.active{
-    border-bottom: 1px solid $darkBlueColor;
+    border-bottom: 3px solid $darkBlueColor;
 }
 li.each-tab-navigator.active>a{
 	color: $darkBlueColor !important;
