@@ -81,6 +81,14 @@ body .hide-on-mobile-flex {
   color: #333333 !important;
 }
 
+.text-grey-color {
+  color: #555555;
+}
+
+.text-light-grey {
+  color: #777777;
+}
+
 .boder-grey-color {
   border-bottom: 1px solid #ececec;
 }
@@ -397,6 +405,10 @@ li.each-tab-navigator.active > a {
   z-index: 5;
   -webkit-animation: jumpOut 0.4s cubic-bezier(0.25, 0.71, 0.13, 0.99) forwards;
           animation: jumpOut 0.4s cubic-bezier(0.25, 0.71, 0.13, 0.99) forwards;
+}
+
+.thematic-item {
+  border: 1px solid #ececec;
 }
 
 .footer-wr .footer-main {

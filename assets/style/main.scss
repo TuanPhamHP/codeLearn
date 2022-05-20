@@ -12,6 +12,8 @@ $scale: 0.9;
 $darkBlueColor: #4086FF;
 $navbarYellowColor: #FFA216;
 $lightBlueColor:#669eff;
+$textGreyColor:#555555;
+$tlightGreyColor:#777777;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -77,6 +79,12 @@ body {
 }
 .text-dark{
 	color: $textDark !important;
+}
+.text-grey-color{
+	color: $textGreyColor;
+}
+.text-light-grey{
+	color: $tlightGreyColor;
 }
 .boder-grey-color{
 	border-bottom: 1px solid $boderGreyColor;
@@ -255,6 +263,11 @@ li.each-tab-navigator.active>a{
 		animation: jumpOut 0.4s cubic-bezier(0.25, 0.71, 0.13, 0.99) forwards;
 	}
 }
+//Component
+.thematic-item{
+    border: 1px solid $boderGreyColor;
+}
+
 // FOOTER
 .footer-wr {
 	.footer-main {
