@@ -325,7 +325,7 @@ body .hide-on-mobile-flex {
 }
 
 li.each-tab-navigator.active {
-  border-bottom: 3px solid #4086FF;
+  border-bottom: 1px solid #4086FF;
 }
 
 li.each-tab-navigator.active > a {
@@ -424,9 +424,6 @@ li.each-tab-navigator.active > a {
 }
 
 @media only screen and (min-width: 1200px) {
-  .footer-main__container {
-    min-width: 1280px;
-  }
   .container {
     min-width: 1280px;
   }

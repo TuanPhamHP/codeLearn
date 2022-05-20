@@ -195,7 +195,7 @@ body {
 	background-color: $navbarYellowColor;
 }
 li.each-tab-navigator.active{
-    border-bottom: 3px solid $darkBlueColor;
+    border-bottom: 1px solid $darkBlueColor;
 }
 li.each-tab-navigator.active>a{
 	color: $darkBlueColor !important;
@@ -289,9 +289,9 @@ li.each-tab-navigator.active>a{
 	}
 }
 @media only screen and (min-width: 1200px) {
-	.footer-main__container{
-		min-width: 1280px;
-	}
+	// .footer-main__container{
+	// 	min-width: 1280px;
+	// }
 	.container{
 		min-width: 1280px;
 	}
