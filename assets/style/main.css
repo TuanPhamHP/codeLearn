@@ -93,6 +93,10 @@ body .hide-on-mobile-flex {
   color: #333333 !important;
 }
 
+.textlack-color {
+  color: #444444;
+}
+
 .text-grey-color {
   color: #555555;
 }
@@ -101,15 +105,15 @@ body .hide-on-mobile-flex {
   color: #777777;
 }
 
+.text-red-color {
+  color: #FC4848;
+}
+
 .boder-grey-color {
   border-bottom: 1px solid #ececec;
 }
 
 .dark-blue-color {
-  background-color: #4086ff !important;
-}
-
-.dark-bluee-color {
   background-color: #4086ff !important;
 }
 
@@ -486,6 +490,10 @@ li.each-tab-navigator.active > a {
 .thematic-related-container::-webkit-scrollbar-thumb {
   outline: 1px solid #c4c4c4;
   background-color: #c4c4c4;
+}
+
+button.do-excise {
+  border: 1px solid #4086ff;
 }
 
 .footer-wr .footer-main {

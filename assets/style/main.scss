@@ -5,18 +5,19 @@ $darkGreyColor: #333333;
 $lightGreyColor: #3a4149;
 $slightGreyColor: #676767;
 $textDark: #333333;
+$textBlackColor: #444444;
 $boderGreyColor: #ececec;
 $slightGreyColorSub2: #777777;
 $slightGreyColor: #737373;
 $scale: 0.9;
 $darkBlueColor: #4086ff;
-$darkBlueeColor: #4086ff;
 $navbarYellowColor: #ffa216;
 $lightBlueColor: #669eff;
 $semanticScColor: #7bbf6a;
 $textGreyColor: #555555;
 $tlightGreyColor: #777777;
 $slateGrayColor: #c4c4c4;
+$textRedColor:#FC4848;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -92,20 +93,23 @@ body {
 .text-dark {
 	color: $textDark !important;
 }
+.textlack-color{
+	color: $textBlackColor;
+}
 .text-grey-color {
 	color: $textGreyColor;
 }
 .text-light-grey {
 	color: $tlightGreyColor;
 }
+.text-red-color{
+	color: $textRedColor;
+}
 .boder-grey-color {
 	border-bottom: 1px solid $boderGreyColor;
 }
 .dark-blue-color {
 	background-color: $darkBlueColor !important;
-}
-.dark-bluee-color {
-	background-color: $darkBlueeColor !important;
 }
 .bg-color-hover {
 	background-color: $navbarYellowColor;
@@ -327,6 +331,11 @@ li.each-tab-navigator.active > a {
 	outline: 1px solid $slateGrayColor;
 	background-color: $slateGrayColor; 
 }
+//modal
+button.do-excise{
+    border: 1px solid $darkBlueColor;
+}
+
 
 // FOOTER
 .footer-wr {
