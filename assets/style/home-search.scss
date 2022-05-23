@@ -43,7 +43,7 @@
 		gap: 16px;
 		width: 80%;
 		margin: auto;
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 		max-width: 796px;
 	}
 	.search-block {
@@ -87,7 +87,8 @@
 	}
 	.lib-inner-advance-filter {
 		-webkit-box-flex: 0;
-		margin-top: 0px;
+
+		margin-top: 46px;
 		max-width: 300px;
 		width: 0;
 		box-sizing: content-box;
@@ -102,6 +103,7 @@
 		&.show-advance-filter {
 			display: block;
 			width: 100%;
+			padding-right: 16px !important;
 			opacity: 1;
 			transform: translateX(0px);
 			.side-filter-wr {
@@ -112,7 +114,11 @@
 	}
 	.btn-advance-toggle-filter {
 		background-color: transparent;
-
+		position: absolute;
+		padding: 0;
+		top: 24px;
+		left: 16px;
+		gap: 16px;
 		gap: 16px;
 		.setting-icon {
 			display: none;
