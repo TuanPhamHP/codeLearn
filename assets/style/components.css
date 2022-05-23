@@ -35,11 +35,7 @@
 }
  
 .thematic-related-container::-webkit-scrollbar-thumb {
-  outline: 1px solid slategrey;
   border-radius: 2px;
-  background-color: darkgrey;
-  /* background-color: $slateGreyColor; 
-  anh xem giúp tại sao em sao chỗ này em import rồi mà ko được ạ */
 }
 
 
