@@ -1,3 +1,4 @@
+@import 'main.scss';
 #relative-container-right{
     margin-top: 70px;
 }
@@ -5,12 +6,16 @@
     background-color: #fff;
     border-radius: 8px;
     padding: 17px 16px 12px 12px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 420px;
+    height: 504px;
+  
 }
 .thematic-related-title{
     line-height: 21px;
     margin-bottom: 15px;
 }
-
 .thematic-item{
     padding: 6px;
     padding-right: 0px;
@@ -25,11 +30,22 @@
 .avatar_teacher{
     padding-right: 1px;
 }
+.thematic-related-container::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+.thematic-related-container::-webkit-scrollbar-thumb {
+  outline: 1px solid slategrey;
+  border-radius: 2px;
+  background-color: darkgrey;
+}
+
 
 .group-related-container{
     border-radius: 8px;
     margin-top: 19px;
     padding: 20px;
+    width: 420px;
 }
 .group-facebook{
     margin-left: 13px;
@@ -72,5 +88,16 @@
 }
 .descript-group{
     margin-top: 54px;
+    padding-right: 21px;
+}
+.join-class{
+    border-radius: 26px;
+    border: none;
+    padding: 16px 100px 12px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+button.join-class>p{
+    line-height: 22px;
 }
 

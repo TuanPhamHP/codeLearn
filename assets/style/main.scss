@@ -9,11 +9,12 @@ $textDark : #333333;
 $boderGreyColor: #ececec;
 $slightGreyColor: #737373;
 $scale: 0.9;
-$darkBlueColor: #4086FF;
+$darkBlueeColor: #4086FF;
 $navbarYellowColor: #FFA216;
 $lightBlueColor:#669eff;
 $textGreyColor:#555555;
 $tlightGreyColor:#777777;
+$slateGrayColor:#C4C4C4;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -92,8 +93,14 @@ body {
 .dark-blue-color{
 	background-color: $darkBlueColor !important;
 }
+.dark-bluee-color{
+	background-color: $darkBlueeColor !important;
+}
 .bg-color-hover{
 	background-color: $navbarYellowColor;
+}
+.slate-gray-color{
+	background-color: $slateGrayColor;
 }
 
 .fw-500 {

@@ -94,11 +94,19 @@ body .hide-on-mobile-flex {
 }
 
 .dark-blue-color {
+  background-color: #010021 !important;
+}
+
+.dark-bluee-color {
   background-color: #4086FF !important;
 }
 
 .bg-color-hover {
   background-color: #FFA216;
+}
+
+.slate-gray-color {
+  background-color: #C4C4C4;
 }
 
 .fw-500 {
@@ -333,11 +341,11 @@ body .hide-on-mobile-flex {
 }
 
 li.each-tab-navigator.active {
-  border-bottom: 3px solid #4086FF;
+  border-bottom: 3px solid #010021;
 }
 
 li.each-tab-navigator.active > a {
-  color: #4086FF !important;
+  color: #010021 !important;
 }
 
 .header {
@@ -412,7 +420,7 @@ li.each-tab-navigator.active > a {
 }
 
 .footer-wr .footer-main {
-  background-color: #4086FF;
+  background-color: #010021;
   padding: 60px 0;
 }
 
