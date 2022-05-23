@@ -6,8 +6,11 @@
     padding: 22px;
     line-height: 19px;
 }
-.navbar-toggler-1{
+img.navbar-toggler-icon-1{
     margin-right: 140px;
+}
+.navbar-toggler-icon-2>img{
+    margin-right: 70px;
 }
 
 .choose-class{
@@ -34,13 +37,13 @@
 li.each-tab-navigator{
     list-style: none;
     margin-right: 64px;
-    margin-top: 6px;
+    margin-top: 9px;
     padding: 14px;
     padding-left: 0;
     line-height: 23px;
 }
 .my-library{
-    padding: 5px 15px;
+    padding: 7px 16px;
     border-radius: 20px;
     border: none;
     margin-top: 14px;
@@ -48,5 +51,6 @@ li.each-tab-navigator{
 }
 .library-link{
     line-height: 19px;
+
 }
 

@@ -1064,6 +1064,7 @@ li.each-tab-navigator.active > a {
 .seminar-detail-inner-section .class-private {
   line-height: 19px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .seminar-detail-inner-section .group-private {
