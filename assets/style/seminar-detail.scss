@@ -116,13 +116,12 @@
 		padding-top: 32px;
 		.list-tabs {
 			.nav-link {
-				padding-top: 0;
-				padding-bottom: 0;
-				padding-left: 0;
+				padding: 0 40px 0 0;
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 23px;
 				color: #979797;
+
 				&.active {
 					font-weight: 700;
 					background-color: transparent;
@@ -130,6 +129,7 @@
 				}
 			}
 		}
+
 		.tab-content {
 			background: #ffffff;
 			border: 1px solid #eeeeee;
@@ -578,6 +578,16 @@
 			line-height: 21px;
 			color: #262f3e;
 			width: 100%;
+		}
+		button.close {
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			&:focus,
+			&:active {
+				outline: none;
+				border: none;
+			}
 		}
 	}
 	.modal-body {
