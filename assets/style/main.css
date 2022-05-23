@@ -412,6 +412,10 @@ li.each-tab-navigator.active > a {
           transform: translateY(-3px);
 }
 
+.white-space-normal {
+  white-space: normal !important;
+}
+
 .header {
   height: 138px;
   background-color: #fff;
