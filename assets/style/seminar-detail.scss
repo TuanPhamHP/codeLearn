@@ -1,3 +1,4 @@
+@import 'main.scss';
 .seminar-detail-inner-section {
 	padding-top: 36px;
 	padding-bottom: 73px;
@@ -370,6 +371,111 @@
 			}
 		}
 	}
+
+	// LS
+
+	#relative-container-right {
+		margin-top: 0px;
+		position: sticky;
+		top: 12px;
+		height: fit-content;
+	}
+	.thematic-related-container {
+		background-color: #fff;
+		border-radius: 8px;
+		padding: 17px 16px 12px 12px;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		width: 420px;
+		height: 504px;
+	}
+	.thematic-related-title {
+		line-height: 21px;
+		margin-bottom: 15px;
+	}
+	.thematic-item {
+		padding: 6px;
+		padding-right: 0px;
+	}
+	.thematic-item-title {
+		line-height: 128%;
+	}
+	.list_teacher {
+		line-height: 18px;
+	}
+	.avatar_teacher {
+		padding-right: 1px;
+	}
+	.thematic-related-container::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	.thematic-related-container::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		background: #c4c4c4;
+		/* background-color: $slateGreyColor; 
+  anh xem giúp tại sao em sao chỗ này em import rồi mà ko được ạ */
+	}
+
+	.group-related-container {
+		border-radius: 8px;
+		margin-top: 19px;
+		padding: 20px;
+		width: 420px;
+	}
+	.group-facebook {
+		margin-left: 13px;
+		margin-right: 20px;
+	}
+	.group-title {
+		line-height: 20px;
+	}
+	.class-private {
+		line-height: 19px;
+		margin-bottom: 10px;
+	}
+	.group-private {
+		margin-right: 6px;
+	}
+	.retangle-ic {
+		margin-right: 9px;
+	}
+	.avatar_member {
+		position: absolute;
+	}
+	.avatar_member_1 {
+		z-index: 5;
+	}
+	.avatar_member_2 {
+		z-index: 4;
+		left: 120px;
+	}
+	.avatar_member_3 {
+		z-index: 3;
+		left: 140px;
+	}
+	.avatar_member_4 {
+		z-index: 2;
+		left: 160px;
+	}
+	.avatar_member_5 {
+		z-index: 1;
+		left: 180px;
+	}
+	.descript-group {
+		margin-top: 54px;
+		padding-right: 21px;
+	}
+	.join-class {
+		border-radius: 26px;
+		border: none;
+		padding: 12px;
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
+	button.join-class > p {
+		line-height: 22px;
+	}
 }
 .rating-block {
 	background: #ffffff;
@@ -498,7 +604,27 @@
 			cursor: pointer;
 		}
 	}
-	&.not-sub {
+	&.not-sub-join {
+		.modal-header {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+		.modal-body {
+			.body-msg {
+				max-width: unset;
+			}
+			.group-actions {
+				gap: 10px;
+			}
+			.btn-action {
+				background: #ffa216;
+			}
+			.btn-action-gray {
+				background: #c4c4c4 !important;
+			}
+		}
+	}
+	&.not-sub-join {
 		.modal-body {
 			.btn-action {
 				background: #ffa216;

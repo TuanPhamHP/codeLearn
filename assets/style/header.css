@@ -6,11 +6,8 @@
     padding: 22px;
     line-height: 19px;
 }
-img.navbar-toggler-icon-1{
+.navbar-toggler-1{
     margin-right: 140px;
-}
-.navbar-toggler-icon-2>img{
-    margin-right: 70px;
 }
 
 .choose-class{
@@ -37,13 +34,13 @@ img.navbar-toggler-icon-1{
 li.each-tab-navigator{
     list-style: none;
     margin-right: 64px;
-    margin-top: 9px;
+    margin-top: 6px;
     padding: 14px;
     padding-left: 0;
     line-height: 23px;
 }
 .my-library{
-    padding: 7px 16px;
+    padding: 5px 15px;
     border-radius: 20px;
     border: none;
     margin-top: 14px;
@@ -51,6 +48,5 @@ li.each-tab-navigator{
 }
 .library-link{
     line-height: 19px;
-
 }
 
