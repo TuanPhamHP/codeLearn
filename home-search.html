@@ -31,25 +31,7 @@
   <main>
     <section class="container-fluid  home-search-inner-section">
       <div class="container lib-inner-container">
-        <div class="normal-filter">
-          <div class="dropdown select-fk">
-            <p class="btn d-flex align-items-center justify-content-between dropdown-toggle mb-0 selected-data color-darkgrey"
-              type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Chuyên đề
 
-              <img src="./assets/images/icon/chevron-dropdown.svg" alt="">
-            </p>
-            <div class="dropdown-menu select-items" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item on-active" href="#">Chuyên đề</a>
-              <a class="dropdown-item" href="#">Video</a>
-            </div>
-          </div>
-          <div class="search-block d-flex align-items-center bg-white w-100">
-            <img src="./assets/images/icon/lookup-light.svg" class="search-icon" alt="">
-            <input type="text" class="color-darkgrey" placeholder="Nhập từ khóa tìm kiếm">
-            <div class="append-block pointer">Tìm kiếm</div>
-          </div>
-        </div>
         <button id="advance-filter-btn"
           class="btn btn-advance-toggle-filter color-darkgrey fw-500 btn-no-outline d-flex align-items-center collapsed"
           data-target="#advance-filter" aria-controls="advance-filter">
@@ -60,7 +42,7 @@
         </button>
         <div class="py-3 d-flex">
           <!-- FILTER -->
-          <div class="lib-inner-advance-filter pr-3" id="advance-filter">
+          <div class="lib-inner-advance-filter " id="advance-filter">
             <div class="side-filter-wr">
               <div class="list-tag dv-e pb-3">
                 <div class="each-tag color-slightgrey  mb-2 d-flex align-items-center justify-content-between">Chân trời
@@ -147,6 +129,25 @@
 
           <!-- LIST DATA -->
           <div class="list-data w-100" id="list-data">
+            <div class="normal-filter">
+              <div class="dropdown select-fk">
+                <p class="btn d-flex align-items-center justify-content-between dropdown-toggle mb-0 selected-data color-darkgrey"
+                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Chuyên đề
+                  <img src="./assets/images/icon/chevron-dropdown.svg" alt="">
+                </p>
+                <div class="dropdown-menu select-items" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item on-active" href="#">Chuyên đề</a>
+                  <a class="dropdown-item" href="#">Video</a>
+                </div>
+              </div>
+              <div class="search-block d-flex align-items-center bg-white w-100">
+                <img src="./assets/images/icon/lookup-light.svg" class="search-icon" alt="">
+                <input type="text" class="color-darkgrey" placeholder="Nhập từ khóa tìm kiếm">
+                <div class="append-block pointer">Tìm kiếm</div>
+              </div>
+            </div>
 
             <div class="data-block my-0">
               <div class="swiper customerSwiper px-4">
