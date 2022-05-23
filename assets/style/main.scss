@@ -269,6 +269,9 @@ li.each-tab-navigator.active > a {
 		// color: #fff;
 	}
 }
+.white-space-normal {
+	white-space: normal !important;
+}
 .header {
 	height: 138px;
 	background-color: #fff;
@@ -329,7 +332,7 @@ li.each-tab-navigator.active > a {
 }
 .thematic-related-container::-webkit-scrollbar-thumb {
 	outline: 1px solid $slateGrayColor;
-	background-color: $slateGrayColor; 
+	background-color: $slateGrayColor;
 }
 //modal
 button.do-excise{

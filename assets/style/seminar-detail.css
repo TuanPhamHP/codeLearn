@@ -413,6 +413,10 @@ li.each-tab-navigator.active > a {
           transform: translateY(-3px);
 }
 
+.white-space-normal {
+  white-space: normal !important;
+}
+
 .header {
   height: 138px;
   background-color: #fff;
@@ -482,6 +486,11 @@ li.each-tab-navigator.active > a {
 
 .thematic-item {
   border: 1px solid #ececec;
+}
+
+.thematic-related-container::-webkit-scrollbar-thumb {
+  outline: 1px solid #c4c4c4;
+  background-color: #c4c4c4;
 }
 
 .footer-wr .footer-main {
@@ -702,9 +711,7 @@ li.each-tab-navigator.active > a {
 }
 
 .seminar-detail-inner-section .tabs-controller .list-tabs .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding: 0 40px 0 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -1236,6 +1243,17 @@ li.each-tab-navigator.active > a {
   line-height: 21px;
   color: #262f3e;
   width: 100%;
+}
+
+.modal-rating .modal-header button.close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.modal-rating .modal-header button.close:focus, .modal-rating .modal-header button.close:active {
+  outline: none;
+  border: none;
 }
 
 .modal-rating .modal-body .body-msg {
