@@ -323,6 +323,10 @@ li.each-tab-navigator.active > a {
 .thematic-item {
 	border: 1px solid $boderGreyColor;
 }
+.thematic-related-container::-webkit-scrollbar-thumb {
+	outline: 1px solid $slateGrayColor;
+	background-color: $slateGrayColor; 
+}
 
 // FOOTER
 .footer-wr {

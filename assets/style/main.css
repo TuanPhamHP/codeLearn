@@ -483,6 +483,11 @@ li.each-tab-navigator.active > a {
   border: 1px solid #ececec;
 }
 
+.thematic-related-container::-webkit-scrollbar-thumb {
+  outline: 1px solid #c4c4c4;
+  background-color: #c4c4c4;
+}
+
 .footer-wr .footer-main {
   background-color: #4086ff;
   padding: 60px 0;
