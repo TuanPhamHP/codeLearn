@@ -312,6 +312,10 @@
   margin-bottom: 24px;
 }
 
+.lib-inner-section .card-prod .card-img-top {
+  aspect-ratio: 327 / 193;
+}
+
 .lib-inner-section .card-prod .btn-unfollow {
   display: none;
 }
