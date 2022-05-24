@@ -89,11 +89,15 @@ body .hide-on-mobile-flex {
   background-color: #7bbf6a !important;
 }
 
+.bg-grey-color {
+  background-color: #CBCBCB;
+}
+
 .text-dark {
   color: #333333 !important;
 }
 
-.textlack-color {
+.text-black-color {
   color: #444444;
 }
 
@@ -107,6 +111,18 @@ body .hide-on-mobile-flex {
 
 .text-red-color {
   color: #FC4848;
+}
+
+.text-light-black {
+  color: #0A152A;
+}
+
+.t-dark-blue {
+  color: #4086ff;
+}
+
+.t-black-color {
+  color: #364560;
 }
 
 .boder-grey-color {
@@ -123,6 +139,10 @@ body .hide-on-mobile-flex {
 
 .fw-500 {
   font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
 }
 
 .fw-700 {
@@ -494,6 +514,10 @@ li.each-tab-navigator.active > a {
 
 button.do-excise {
   border: 1px solid #4086ff;
+}
+
+input.rename-folder[type=text]:focus {
+  color: #4086ff;
 }
 
 .footer-wr .footer-main {

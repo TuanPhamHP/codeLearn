@@ -17,7 +17,10 @@ $semanticScColor: #7bbf6a;
 $textGreyColor: #555555;
 $tlightGreyColor: #777777;
 $slateGrayColor: #c4c4c4;
+$bgGreyColor: #CBCBCB;
 $textRedColor:#FC4848;
+$textlightBlack: #0A152A;
+$tBlackColor: #364560;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -90,10 +93,13 @@ body {
 .bg-color-semanticsc {
 	background-color: $semanticScColor !important;
 }
+.bg-grey-color{
+	background-color: $bgGreyColor;
+}
 .text-dark {
 	color: $textDark !important;
 }
-.textlack-color{
+.text-black-color{
 	color: $textBlackColor;
 }
 .text-grey-color {
@@ -104,6 +110,15 @@ body {
 }
 .text-red-color{
 	color: $textRedColor;
+}
+.text-light-black{
+	color: $textlightBlack;
+}
+.t-dark-blue{
+	color: $darkBlueColor;
+}
+.t-black-color{
+	color: $tBlackColor;
 }
 .boder-grey-color {
 	border-bottom: 1px solid $boderGreyColor;
@@ -118,6 +133,9 @@ body {
 
 .fw-500 {
 	font-weight: 500 !important;
+}
+.fw-600 {
+	font-weight: 600 !important;
 }
 .fw-700 {
 	font-weight: 700 !important;
@@ -336,6 +354,11 @@ li.each-tab-navigator.active > a {
 button.do-excise{
     border: 1px solid $darkBlueColor;
 }
+input.rename-folder[type=text]:focus {
+    color: $darkBlueColor;
+  }
+
+
 
 
 // FOOTER
