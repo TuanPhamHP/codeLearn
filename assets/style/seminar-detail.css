@@ -91,11 +91,7 @@ body .hide-on-mobile-flex {
 }
 
 .bg-grey-color {
-<<<<<<< HEAD
-  background-color: #CBCBCB;
-=======
   background-color: #cbcbcb;
->>>>>>> c02ef9c1357120a7ba8b929395b7ff62ab083036
 }
 
 .text-dark {
@@ -120,18 +116,6 @@ body .hide-on-mobile-flex {
 
 .text-light-black {
   color: #0a152a;
-}
-
-.t-dark-blue {
-  color: #4086ff;
-}
-
-.t-black-color {
-  color: #364560;
-}
-
-.text-light-black {
-  color: #0A152A;
 }
 
 .t-dark-blue {
@@ -531,14 +515,6 @@ li.each-tab-navigator.active > a {
 
 button.do-excise {
   border: 1px solid #4086ff;
-}
-
-<<<<<<< HEAD
-input.rename-folder[type=text]:focus {
-=======
-input.rename-folder[type='text']:focus {
->>>>>>> c02ef9c1357120a7ba8b929395b7ff62ab083036
-  color: #4086ff;
 }
 
 .footer-wr .footer-main {

@@ -33,22 +33,19 @@
                 </div>
             </div>
             <div class="col-xl-6 col-6 px-0 d-flex justify-content-end align-items-center">
-                <!-- <div class="p-1 mr-1 collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
-                <!-- <div class="collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
-
                 <div class="p-1 mr-1 collapsible" data-toggle="collapse" href="#collapseExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample"><img src="./assets/images/icon/dropdownn.svg"
+                    aria-expanded="false" aria-controls="collapseExample"><img class="expand-icon" src="./assets/images/icon/dropdownn.svg"
                         alt=""></div>
                 <!-- click vào cả dòng(trừ cái icon three-dots) để nó toggle không phải chỉ mỗi icon -->
-                <!-- dùng css + attributes condition để thêm animation cho icon, 
-                        tham khảo  .cate-header[aria-expanded='false'] trong file home-search.css -->
-                <a href="#" class="p-1 ml-3">
-                    <img src="./assets/images/icon/three-dots.svg" alt="">
-                    <!-- 
-                        Đây là dropdown nha, 
-                        doc: https://getbootstrap.com/docs/4.0/components/dropdowns/ 
-                    -->
-                </a>
+                <div class="dropdown">
+                    <button class="dropdown-toggle p-1 ml-3 border-0 bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/icon/three-dots.svg" alt="">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Xóa</a>
+                      <a class="dropdown-item" href="#">Sửa</a>
+                    </div>
+                  </div>
             </div>
             <div class="collapse" id="collapseExample">
                 <div class="row document-item d-flex bg-white">
@@ -85,17 +82,12 @@
 
     <div class="container mb-4">
         <div class="row document-item bg-white">
-            <div class="col-xl-6 col-6 d-flex px-0">
-                <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                <div class="document-rename limit-line-1 pt-2">
-                    <!-- không cần limit line, text chạy theo input -->
-                    <input type="text" width="240px"
-                        class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16 text-light-black"
+            <div class="col-xl-6 col-6 px-0">
+                <div class="document-rename d-flex pt-2">
+                    <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                    <input type="text"
+                        class="form-control rename-folder btn-no-outline pt-2 fw-400 font-size-16 text-light-black"
                         id="inputPassword" placeholder="" value="Luyện thi đại học|">
-                    <!-- bỏ margin đi, ảnh + input nằm cùng hàng -->
-                    <!-- thêm class btn-no-outline để bỏ outline, border khi focus,
-                            khi focus thì màu chữ không đổi
-                        -->
                 </div>
             </div>
 
@@ -108,14 +100,15 @@
 
     <div class="container mb-4">
         <div class="row document-item bg-white py-4">
-            <div class="col-xl-6 col-6 d-flex px-0 align-items-start">
-                <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
-                <div class="document-rename">
-                    <input type="text" width="240px" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
+            <div class="col-xl-6 col-6 px-0 align-items-start">
+                <div class="document-rename d-flex">
+                    <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
+                    <input type="text" class="form-control rename-folder btn-no-outline pt-2 fw-400 font-size-16"
                         id="inputPassword" placeholder="" value="">
-                    <span class="help-block text-red-color">*Tên danh sách không được để trống</span>
 
                 </div>
+                <div class="help-block mt-2 text-red-color">*Tên danh sách không được để trống</div>
+
             </div>
 
             <div class="col-xl-6 col-6 d-flex px-0 justify-content-end align-items-center">
@@ -128,14 +121,14 @@
 
     <div class="container mb-4">
         <div class="row document-item bg-white py-4">
-            <div class="col-xl-6 col-6 d-flex px-0 align-items-start">
-                <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
-                <div class="document-rename">
-                    <input type="text" width="240px" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
+            <div class="col-xl-6 col-6 px-0 align-items-start">
+                <div class="document-rename d-flex">
+                    <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
+                    <input type="text" class="form-control rename-folder btn-no-outline pt-2 fw-400 font-size-16"
                         id="inputPassword" placeholder="" value="">
-                    <span class="help-block text-red-color">*Tên danh sách đã tồn tại, mời bạn nhập tên khác!</span>
-
                 </div>
+                <div class="help-block mt-2 text-red-color">*Tên danh sách đã tồn tại, mời bạn nhập tên khác!</div>
+
             </div>
 
             <div class="col-xl-6 col-6 d-flex justify-content-end px-0 align-items-center">
@@ -154,7 +147,6 @@
                     <p class="warn-recycle text-light-grey px-2 text-center">Hành động này sẽ xóa tất cả video <br>
                         đã lưu trong <span class="fw-500">“Xem sau”</span><br>
                         Bạn vẫn muốn xóa ?</p>
-
                     <div class="d-flex fw-400">
                         <p class="p-2 mr-2 t-black-color mb-2">Hủy</p>
                         <p class="p-2 ml-2 t-dark-blue mb-2">Đồng ý</p>

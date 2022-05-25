@@ -516,10 +516,6 @@ button.do-excise {
   border: 1px solid #4086ff;
 }
 
-input.rename-folder[type='text']:focus {
-  color: #4086ff;
-}
-
 .footer-wr .footer-main {
   background-color: #4086ff;
   padding: 60px 0;

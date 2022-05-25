@@ -19,6 +19,7 @@
     width: 240px;
 }
 
+
 .cancel-file {
     margin-right: 20px;
     padding: 8px 26px 7px 28px;
@@ -33,6 +34,7 @@
 
 .help-block {
     line-height: 18px;
+    margin-left: 54px;
 }
 
 .recycle-item {
@@ -52,12 +54,16 @@
     padding: 30px;
     display: none;
     overflow: hidden;
-    background-color: red;
 }
 .collapsible {
     cursor: pointer;
     outline: none;
 }
+
+.collapsible[aria-expanded='false']{
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
 
 
 
