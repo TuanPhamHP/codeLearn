@@ -35,37 +35,46 @@
             <div class="col-xl-6 col-6 px-0 d-flex justify-content-end align-items-center">
                 <!-- <div class="p-1 mr-1 collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
                 <!-- <div class="collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
-                <div class="p-1 mr-1 collapsible" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample"><img src="./assets/images/icon/dropdownn.svg" alt=""></div>
+
+                <div class="p-1 mr-1 collapsible" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample"><img src="./assets/images/icon/dropdownn.svg"
+                        alt=""></div>
+                <!-- click vào cả dòng(trừ cái icon three-dots) để nó toggle không phải chỉ mỗi icon -->
+                <!-- dùng css + attributes condition để thêm animation cho icon, 
+                        tham khảo  .cate-header[aria-expanded='false'] trong file home-search.css -->
                 <a href="#" class="p-1 ml-3">
                     <img src="./assets/images/icon/three-dots.svg" alt="">
+                    <!-- 
+                        Đây là dropdown nha, 
+                        doc: https://getbootstrap.com/docs/4.0/components/dropdowns/ 
+                    -->
                 </a>
             </div>
             <div class="collapse" id="collapseExample">
-                    <div class="row document-item d-flex bg-white">
-                        <div class="d-flex px-0">
-                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                            <div class="document-name limit-line-1 pt-3">
-                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
-                            </div>
+                <div class="row document-item d-flex bg-white">
+                    <div class="d-flex px-0">
+                        <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                        <div class="document-name limit-line-1 pt-3">
+                            <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
                         </div>
                     </div>
-                    <div class="row document-item d-flex bg-white">
-                        <div class="d-flex px-0">
-                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                            <div class="document-name limit-line-1 pt-3">
-                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
-                            </div>
+                </div>
+                <div class="row document-item d-flex bg-white">
+                    <div class="d-flex px-0">
+                        <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                        <div class="document-name limit-line-1 pt-3">
+                            <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
                         </div>
                     </div>
-                    <div class="row document-item d-flex bg-white">
-                        <div class="d-flex px-0">
-                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                            <div class="document-name limit-line-1 pt-3">
-                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
-                            </div>
+                </div>
+                <div class="row document-item d-flex bg-white">
+                    <div class="d-flex px-0">
+                        <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                        <div class="document-name limit-line-1 pt-3">
+                            <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
                         </div>
                     </div>
+                </div>
             </div>
 
         </div>
@@ -79,9 +88,14 @@
             <div class="col-xl-6 col-6 d-flex px-0">
                 <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
                 <div class="document-rename limit-line-1 pt-2">
+                    <!-- không cần limit line, text chạy theo input -->
                     <input type="text" width="240px"
                         class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16 text-light-black"
                         id="inputPassword" placeholder="" value="Luyện thi đại học|">
+                    <!-- bỏ margin đi, ảnh + input nằm cùng hàng -->
+                    <!-- thêm class btn-no-outline để bỏ outline, border khi focus,
+                            khi focus thì màu chữ không đổi
+                        -->
                 </div>
             </div>
 
