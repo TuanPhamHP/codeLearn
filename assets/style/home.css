@@ -22,6 +22,10 @@
   padding-bottom: 30px;
 }
 
+.lib-inner-section .justwatchSwiper .swiper-wrapper {
+  height: 150px;
+}
+
 .lib-inner-section .lib-inner-advance-filter {
   -webkit-box-flex: 0;
   margin-top: 46px;
@@ -474,5 +478,36 @@
   font-size: 14px;
   line-height: 16px;
   color: #888888;
+}
+
+.lib-inner-section .card-prod.card-list-view .card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 270px;
+}
+
+.lib-inner-section .card-prod.card-list-view .card:not(.card-small):before {
+  display: none;
+}
+
+.lib-inner-section .card-prod.card-list-view .card .preview-image {
+  position: relative;
+  border-radius: 3px;
+  min-width: 270px;
+}
+
+.lib-inner-section .card-prod.card-list-view .card .preview-image::before {
+  content: '';
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.48)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 8px 8px 0px 0px;
+  z-index: 2;
 }
 /*# sourceMappingURL=home.css.map */
