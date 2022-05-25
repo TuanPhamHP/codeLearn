@@ -1,40 +1,65 @@
-.document-item{
+.document-item {
     padding: 30px;
 }
-.folder{
+
+.folder {
     padding-bottom: 12px;
 }
-.document-name{
+
+.document-name {
     line-height: 22px;
 }
-.rename-folder{
-    
+
+.rename-folder {
     padding-left: 10px;
     line-height: 19px;
-    
-    
 }
 
-.cancel-file{
+.form-control {
+    width: 240px;
+}
+
+.cancel-file {
     margin-right: 20px;
     padding: 8px 26px 7px 28px;
     border-radius: 20px;
 }
-.save-file{
+
+.save-file {
     margin-right: 10px;
     padding: 8px 27px 7px 28px;
     border-radius: 20px;
 }
-.help-block{
+
+.help-block {
     line-height: 18px;
 }
-.recycle-item{
+
+.recycle-item {
     line-height: 19px;
 }
-.icon-recycle{
+
+.icon-recycle {
     margin-top: 2px;
     margin-bottom: 10px;
 }
-.title-recycle{
+
+.title-recycle {
     margin-bottom: 10px;
 }
+
+.document-item-child {
+    padding: 30px;
+    display: none;
+    overflow: hidden;
+    background-color: red;
+}
+.collapsible {
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+

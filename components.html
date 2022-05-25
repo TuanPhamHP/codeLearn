@@ -24,35 +24,68 @@
 </head>
 
 <body>
-    <div class="container mb-4">
-        <div class="row">
-            <div class="document-item d-flex bg-white">
+    <div class="container mb-4 mt-2">
+        <div class="row document-item d-flex bg-white">
+            <div class="col-xl-6 col-6 d-flex px-0">
                 <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                <div class="content document-name display-html limit-line-1 pt-3">
+                <div class="document-name limit-line-1 pt-3">
                     <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
                 </div>
-                <div>
-                    <a href="#">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </a>
-                </div>
-
             </div>
+            <div class="col-xl-6 col-6 px-0 d-flex justify-content-end align-items-center">
+                <!-- <div class="p-1 mr-1 collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
+                <!-- <div class="collapsible"><img src="./assets/images/icon/dropdownn.svg" alt=""></div> -->
+                <div class="p-1 mr-1 collapsible" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="./assets/images/icon/dropdownn.svg" alt=""></div>
+                <a href="#" class="p-1 ml-3">
+                    <img src="./assets/images/icon/three-dots.svg" alt="">
+                </a>
+            </div>
+            <div class="collapse" id="collapseExample">
+                    <div class="row document-item d-flex bg-white">
+                        <div class="d-flex px-0">
+                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                            <div class="document-name limit-line-1 pt-3">
+                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row document-item d-flex bg-white">
+                        <div class="d-flex px-0">
+                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                            <div class="document-name limit-line-1 pt-3">
+                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row document-item d-flex bg-white">
+                        <div class="d-flex px-0">
+                            <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
+                            <div class="document-name limit-line-1 pt-3">
+                                <p title="Luyện thi đại học  (12)" class="fw-500">Luyện thi đại học (12)</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
         </div>
     </div>
+
+
 
 
     <div class="container mb-4">
         <div class="row document-item bg-white">
             <div class="col-xl-6 col-6 d-flex px-0">
                 <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pt-2 pr-3">
-                <div class="content document-rename display-html limit-line-1 pt-2">
-                    <input type="text" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16 text-light-black"
+                <div class="document-rename limit-line-1 pt-2">
+                    <input type="text" width="240px"
+                        class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16 text-light-black"
                         id="inputPassword" placeholder="" value="Luyện thi đại học|">
                 </div>
             </div>
 
-            <div class="col-xl-6 col-6 d-flex px-0 justify-content-end pr-0">
+            <div class="col-xl-6 col-6 d-flex px-0 justify-content-end align-items-center">
                 <button class="btn cancel-file bg-grey-color text-white">Hủy</button>
                 <button class="btn save-file bg-color-darkblue text-white">Lưu</button>
             </div>
@@ -63,8 +96,8 @@
         <div class="row document-item bg-white py-4">
             <div class="col-xl-6 col-6 d-flex px-0 align-items-start">
                 <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
-                <div class="content document-rename">
-                    <input type="text" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
+                <div class="document-rename">
+                    <input type="text" width="240px" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
                         id="inputPassword" placeholder="" value="">
                     <span class="help-block text-red-color">*Tên danh sách không được để trống</span>
 
@@ -83,8 +116,8 @@
         <div class="row document-item bg-white py-4">
             <div class="col-xl-6 col-6 d-flex px-0 align-items-start">
                 <img src="./assets/images/icon/icon-folder.svg" alt="folder" class="folder pr-3">
-                <div class="content document-rename">
-                    <input type="text" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
+                <div class="document-rename">
+                    <input type="text" width="240px" class="form-control rename-folder mb-2 pt-2 fw-400 font-size-16"
                         id="inputPassword" placeholder="" value="">
                     <span class="help-block text-red-color">*Tên danh sách đã tồn tại, mời bạn nhập tên khác!</span>
 
@@ -103,13 +136,14 @@
             <div class="recycle-item bg-white px-4 py-3 font-size-16">
                 <div class="d-flex flex-column align-items-center">
                     <img src="./assets/images/icon/Rac.svg" alt="folder" class="icon-recycle">
-                        <p class="title-recycle fw-600 text-light-black">Xóa danh sách đã lưu</p>
-                        <p class="warn-recycle text-light-grey px-2 text-center">Hành động này sẽ xóa tất cả video <br> đã lưu trong <span class="fw-500">“Xem sau”</span><br>
-                            Bạn vẫn muốn xóa ?</p>
-                   
+                    <p class="title-recycle fw-600 text-light-black">Xóa danh sách đã lưu</p>
+                    <p class="warn-recycle text-light-grey px-2 text-center">Hành động này sẽ xóa tất cả video <br>
+                        đã lưu trong <span class="fw-500">“Xem sau”</span><br>
+                        Bạn vẫn muốn xóa ?</p>
+
                     <div class="d-flex fw-400">
-                        <p class="p-2 mr-2 t-black-color">Hủy</p>
-                        <p class="p-2 ml-2 t-dark-blue">Đồng ý</p>
+                        <p class="p-2 mr-2 t-black-color mb-2">Hủy</p>
+                        <p class="p-2 ml-2 t-dark-blue mb-2">Đồng ý</p>
                     </div>
                 </div>
             </div>
@@ -130,6 +164,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/components.js"></script>
 </body>
 
 </html>
