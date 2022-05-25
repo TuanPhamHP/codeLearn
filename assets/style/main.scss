@@ -17,9 +17,9 @@ $semanticScColor: #7bbf6a;
 $textGreyColor: #555555;
 $tlightGreyColor: #777777;
 $slateGrayColor: #c4c4c4;
-$bgGreyColor: #CBCBCB;
-$textRedColor:#FC4848;
-$textlightBlack: #0A152A;
+$bgGreyColor: #cbcbcb;
+$textRedColor: #fc4848;
+$textlightBlack: #0a152a;
 $tBlackColor: #364560;
 // HELPER
 .ytp-impression-link {
@@ -93,13 +93,13 @@ body {
 .bg-color-semanticsc {
 	background-color: $semanticScColor !important;
 }
-.bg-grey-color{
+.bg-grey-color {
 	background-color: $bgGreyColor;
 }
 .text-dark {
 	color: $textDark !important;
 }
-.text-black-color{
+.text-black-color {
 	color: $textBlackColor;
 }
 .text-grey-color {
@@ -108,16 +108,16 @@ body {
 .text-light-grey {
 	color: $tlightGreyColor;
 }
-.text-red-color{
+.text-red-color {
 	color: $textRedColor;
 }
-.text-light-black{
+.text-light-black {
 	color: $textlightBlack;
 }
-.t-dark-blue{
+.t-dark-blue {
 	color: $darkBlueColor;
 }
-.t-black-color{
+.t-black-color {
 	color: $tBlackColor;
 }
 .boder-grey-color {
@@ -165,7 +165,7 @@ body {
 	.limit-line-#{$i} {
 		overflow: hidden;
 		text-overflow: ellipsis;
-		display: -webkit-box;
+		display: -webkit-box !important;
 		-webkit-line-clamp: #{$i};
 		line-clamp: #{$i};
 		-webkit-box-orient: vertical;
@@ -351,15 +351,12 @@ li.each-tab-navigator.active > a {
 	background-color: $slateGrayColor;
 }
 //modal
-button.do-excise{
-    border: 1px solid $darkBlueColor;
+button.do-excise {
+	border: 1px solid $darkBlueColor;
 }
-input.rename-folder[type=text]:focus {
-    color: $darkBlueColor;
-  }
-
-
-
+input.rename-folder[type='text']:focus {
+	color: $darkBlueColor;
+}
 
 // FOOTER
 .footer-wr {

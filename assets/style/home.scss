@@ -15,6 +15,9 @@
 	.justwatchSwiper {
 		padding-top: 24px;
 		padding-bottom: 30px;
+		.swiper-wrapper {
+			height: 150px;
+		}
 	}
 	.lib-inner-advance-filter {
 		-webkit-box-flex: 0;
@@ -365,6 +368,35 @@
 						font-size: 14px;
 						line-height: 16px;
 						color: #888888;
+					}
+				}
+			}
+		}
+		&.card-list-view {
+			.card-img-top {
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+				max-width: 270px;
+			}
+			.card {
+				&:not(.card-small):before {
+					display: none;
+				}
+				.preview-image {
+					position: relative;
+					border-radius: 3px;
+					min-width: 270px;
+					&::before {
+						content: '';
+						width: 100%;
+						height: 55px;
+						top: 0;
+						left: 0;
+						position: absolute;
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
+						border-radius: 8px 8px 0px 0px;
+						z-index: 2;
 					}
 				}
 			}
