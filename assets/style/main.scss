@@ -156,6 +156,9 @@ body {
 .font-weight-bold {
 	font-weight: 700 !important;
 }
+.cursor-pointer{
+	cursor: pointer !important;
+  }
 @for $i from 10 through 32 {
 	.font-size-#{$i} {
 		font-size: #{$i}px !important;
