@@ -21,6 +21,7 @@ $bgGreyColor: #cbcbcb;
 $textRedColor: #fc4848;
 $textlightBlack: #0a152a;
 $tBlackColor: #364560;
+$borderGrayColor:#EAEAEA;
 // HELPER
 .ytp-impression-link {
 	display: none !important;
@@ -353,6 +354,11 @@ li.each-tab-navigator.active > a {
 	outline: 1px solid $slateGrayColor;
 	background-color: $slateGrayColor;
 }
+.br-border-color {
+	height: 1px;
+	background-color: $boderGreyColor;
+  }
+
 //modal
 button.do-excise {
 	border: 1px solid $darkBlueColor;

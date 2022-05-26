@@ -61,3 +61,38 @@
     -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
 }
+
+
+/* =================== */
+#document-relation-right{
+    padding-left: 60px;
+}
+.document-thematic-container{
+    box-shadow: 0px 4px 12px rgba(116, 116, 116, 0.34);
+    border-radius: 8px;
+    padding: 24px 19px 19px 16px;
+}
+.document-thematic-title{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.document-thematic-list{
+    line-height: 22px;
+}
+.document-relation-container{
+    box-shadow: 0px 4px 12px rgba(116, 116, 116, 0.34);
+    border-radius: 8px;
+    padding: 24px 19px 16px 16px;
+}
+.document-relation-title{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.document-relation-list{
+    line-height: 22px;
+}
+.icon-private{
+    margin-left: 55px;
+}
+
+
