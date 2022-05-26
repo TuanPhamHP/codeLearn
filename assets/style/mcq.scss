@@ -1,4 +1,4 @@
-.doc-inner-section {
+.mcq-inner-section {
 	padding-top: 48px;
 	padding-bottom: 124px;
 	.lib-inner-container {
@@ -12,7 +12,7 @@
 		padding-top: 24px;
 		padding-bottom: 20px;
 		.swiper-slide {
-			height: 150px;
+			height: 185px;
 		}
 	}
 	.justwatchSwiper {
@@ -170,7 +170,6 @@
 				line-height: 13px;
 				min-width: 104px;
 				color: #888888;
-				min-width: 104px;
 			}
 			.select-items {
 				right: 0 !important;
@@ -178,6 +177,7 @@
 				background: #f8f8f8;
 				border: 1px solid #cbcbcb;
 				border-radius: 7px;
+				min-width: 100px;
 				.dropdown-item {
 					font-weight: 400;
 					font-size: 16px;
@@ -379,6 +379,15 @@
 				text-align: right;
 				color: #888888;
 			}
+			.mcq-time-counter {
+				margin-top: 12px;
+				.mcq-time {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 16px;
+					color: #888888;
+				}
+			}
 			.prod-video-live-stream-counter,
 			.prod-video-counter {
 				margin-bottom: 10px;
@@ -402,6 +411,13 @@
 			}
 			.tag-n-markup {
 				margin-top: 12px;
+				gap: 24px;
+				.mcq-time {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 16px;
+					color: #888888;
+				}
 			}
 		}
 		.c-divider {
@@ -420,32 +436,10 @@
 					line-height: 16px;
 					color: #6b6d70;
 					.creator-name {
-						font-style: italic;
 						color: #4086ff;
 						&.color-grey {
 							color: #888888;
 						}
-					}
-				}
-			}
-		}
-		.c-mcq {
-			.card-body {
-				.small-tag,
-				.creator-tag {
-					margin: 0;
-				}
-				.mcq-time-tag,
-				.mcq-count-source {
-					margin-top: 10px;
-					justify-content: space-between;
-					.mcq-time,
-					.mcq-count {
-						// width: 80px;
-						font-weight: 400;
-						font-size: 14px;
-						line-height: 16px;
-						color: #888888;
 					}
 				}
 			}
