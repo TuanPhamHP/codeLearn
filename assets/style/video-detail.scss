@@ -5,23 +5,27 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 16px;
-		color: #777777;
+		color: #888888;
 		a {
 			color: inherit;
 		}
 	}
 }
+ol.breadcrumb {
+	margin-bottom: 9px;
+}
 .video-detail-inner-section {
 	padding: 36px 0 97px;
 	.sticky-ls {
-		position: sticky;
-		top: 14px;
-		height: fit-content;
+		// position: sticky;
+		// top: 14px;
+		// height: fit-content;
 	}
 	.video-detail-content {
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 28px;
+		margin-bottom: 21px;
 	}
 	.video-detail-row {
 		margin-top: 15px;
@@ -54,6 +58,8 @@
 		border-radius: 8px;
 
 		.video-sdk {
+			border-radius: 8px;
+			overflow: hidden;
 			position: relative;
 			.btn-play {
 				position: absolute;
@@ -487,6 +493,125 @@
 			line-height: 45px;
 		}
 	}
+	.chat-block {
+		background: #ffffff;
+		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
+		border-radius: 8px;
+		padding: 12px 0px;
+		.chat-header {
+			padding: 0px 16px;
+			border-bottom: 1px solid #eeeeee;
+			.live-stream-detail {
+				gap: 11px;
+				margin-bottom: 13px;
+				.live-stream-name {
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+		.chat-wr {
+		}
+		.typing-block {
+			gap: 4px;
+			background: #f4f4f4;
+			border-radius: 57px;
+			padding: 6px 10px;
+			margin: 0 12px 4px 20px;
+			input {
+				border: none;
+				background-color: transparent;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				&::placeholder {
+					color: #959595;
+				}
+				&:focus,
+				&:active {
+					border: none;
+					outline: none;
+				}
+			}
+		}
+		.comment {
+			padding: 28px 12px 16px 20px;
+			height: 430px;
+			max-height: 430px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+
+			/* Track */
+			&::-webkit-scrollbar-track {
+				background: transparent;
+			}
+
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				border-radius: 2px;
+				background: #c4c4c4;
+			}
+
+			/* Handle on hover */
+			&::-webkit-scrollbar-thumb:hover {
+				background: #555;
+			}
+			.each-comment {
+				gap: 8px;
+				.user-inf {
+					gap: 10px;
+					.cmt-user-avatar {
+						width: 26px;
+						height: 26px;
+						object-fit: cover;
+					}
+					.user-name {
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 16px;
+					}
+					.user-comment-time {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+						color: #888888;
+					}
+				}
+				.comment-text {
+					padding: 5px 0;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					color: #272727;
+					margin: 0;
+				}
+				.btn-action {
+					font-weight: 500;
+					font-size: 13px;
+					line-height: 15px;
+
+					color: #ababab;
+				}
+				.gr-actions {
+					gap: 10px;
+				}
+			}
+			.child-cmt-list {
+				padding-left: 20px;
+				.more-child-counter {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					color: #6491dd;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
 }
 .modal-rating {
 	.modal-header {
@@ -499,6 +624,16 @@
 			line-height: 21px;
 			color: #262f3e;
 			width: 100%;
+		}
+		button.close {
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			&:focus,
+			&:active {
+				outline: none;
+				border: none;
+			}
 		}
 	}
 	.modal-body {
