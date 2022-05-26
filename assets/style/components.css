@@ -1,5 +1,6 @@
 .document-item {
     padding: 30px;
+    cursor: pointer;
 }
 
 .folder {
@@ -50,11 +51,6 @@
     margin-bottom: 10px;
 }
 
-.document-item-child {
-    padding: 30px;
-    display: none;
-    overflow: hidden;
-}
 .collapsible {
     cursor: pointer;
     outline: none;
