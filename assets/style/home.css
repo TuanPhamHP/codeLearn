@@ -12,7 +12,7 @@
 .home-page-main .app-links-section {
   padding: 125px 0 90px 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .home-page-main .app-links-section .ls .app-links-title {
