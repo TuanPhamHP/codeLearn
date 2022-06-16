@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.intro-page-main .intro-banner {
+  height: 580px;
+}
+
+.intro-page-main .intro-banner-bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro-page-main .intro-demo-section {
+  padding: 67px 0 80px 0;
+}
+
+.intro-page-main .intro-demo-section .ls {
+  padding-right: 40px;
+}
+
+.intro-page-main .intro-demo-section .rs .rs-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.intro-page-main .intro-demo-section .rs .absolute-img {
+  margin-left: 40px;
+}
+
+.intro-page-main .intro-demo-section .rs .spec-desc {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  gap: 18px;
+  padding: 30px 20px;
+  z-index: 2;
+}
+
+.intro-page-main .intro-demo-section .rs .spec-desc-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.intro-page-main .intro-demo-section .rs .spec-desc-img {
+  margin-bottom: 26px;
+}
+
+.intro-page-main .questioning-section {
+  padding: 58px 0 50px;
+  background-color: #f8f8fa;
+}
+
+.intro-page-main .questioning-section .home-page-section-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.intro-page-main .questioning-section .rs {
+  padding-top: 115px;
+}
+
+.intro-page-main .questioning-section .rs .step-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.intro-page-main .questioning-section .rs .step-title::before {
+  position: absolute;
+  content: 'Hỏi bài';
+  color: #f1f1f1;
+  font-size: 160px;
+  left: -100px;
+  bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: -1;
+}
+
+.intro-page-main .questioning-section .rs .step-desc {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.intro-page-main .questioning-section .rs .nav-tabs .nav-item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 18px 0;
+}
+
+.intro-page-main .questioning-section .rs .nav-tabs .nav-item.active {
+  color: #4643f0;
+}
+
+.intro-page-main .questioning-section .tab-pane {
+  height: 780px;
+}
+
+.intro-page-main .questioning-section .tab-pane .step-counter {
+  font-weight: 800;
+  font-size: 240px;
+  line-height: 240px;
+  height: 240px;
+  color: #eeeeee;
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+}
+
+.intro-page-main .archive-section {
+  background: #fb8e0b;
+  padding: 50px 0;
+  background-repeat: no-repeat;
+}
+
+.intro-page-main .archive-section .home-page-section-title {
+  font-size: 36px;
+  line-height: 56px;
+  color: #1b1c20;
+  margin-bottom: 53px;
+}
+
+.intro-page-main .archive-section .each-archive .counter {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.intro-page-main .archive-section .each-archive .arc-desc {
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.intro-page-main .apps-section {
+  background: #333333;
+  padding: 33px 0 0;
+  background-repeat: no-repeat;
+}
+
+.intro-page-main .apps-section .ls .ls-title {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.intro-page-main .apps-section .ls .ls-title-sm {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.intro-page-main .apps-section .ls .links-btn {
+  gap: 24px;
+}
+/*# sourceMappingURL=introduce.css.map */

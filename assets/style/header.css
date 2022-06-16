@@ -1,56 +1,62 @@
-
-.navbar-brand{
-    margin-right: 55px;
-}
-.nav-item{
-    padding: 22px;
-    line-height: 19px;
-}
-img.navbar-toggler-icon-1{
-    margin-right: 140px;
-}
-.navbar-toggler-icon-2>img{
-    margin-right: 70px;
+.page-header ul.navbar-nav {
+  padding-left: 76px;
 }
 
-.choose-class{
-    border-radius: 16px;
-    border: none;
-    margin-right: 20px;
-}
-.class-link{
-    padding: 5px 12px;
-    margin-left: 3px;
-    margin-top: 1px;
-    line-height: 19px;
-}
-.icon-down{
-    padding: 1px;
-}
-.notify{
-    margin-right: 20px;
-}
-#header-bottom{
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+.page-header ul.navbar-nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-li.each-tab-navigator{
-    list-style: none;
-    margin-right: 64px;
-    margin-top: 9px;
-    padding: 14px;
-    padding-left: 0;
-    line-height: 23px;
-}
-.my-library{
-    padding: 7px 16px;
-    border-radius: 20px;
-    border: none;
-    margin-top: 14px;
-    margin-bottom: 12px;
-}
-.library-link{
-    line-height: 19px;
-
+.page-header ul.navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 10px 12px;
+  margin: 0 12px;
+  height: 89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.page-header ul.navbar-nav .nav-item.active .nav-link {
+  color: #4643f0 !important;
+  position: relative;
+}
+
+.page-header ul.navbar-nav .nav-item.active .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #4643f0;
+  bottom: 0;
+  left: 0;
+}
+
+.page-header ul.navbar-nav .nav-item .btn-register,
+.page-header ul.navbar-nav .nav-item .btn-login {
+  border-radius: 22px;
+  height: 45px;
+  width: 115px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.page-header ul.navbar-nav .nav-item .btn-register {
+  background: #4643f0;
+}
+
+.page-header ul.navbar-nav .nav-item .btn-login {
+  color: #9b9b9b;
+}
+/*# sourceMappingURL=header.css.map */

@@ -15,827 +15,453 @@
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
   <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./assets/style/cdn-style.css" />
   <link rel="stylesheet" href="./assets/style/main.css" />
   <!-- SPEC -->
   <link rel="stylesheet" href="./assets/style/home.css" />
-
-
-
-
 </head>
 
 <body>
-  <main>
-    <section class="container-fluid lib-inner-section">
-      <div class="container lib-inner-container">
+  <main class="home-page-main">
+    <section class="home-page-section home-banner">
+      <img src="./assets/images/home-banner.png" alt="home-banner" class="home-banner-bg pointer">
+    </section>
+    <!--  -->
+    <section class="home-page-section app-links-section">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-5 ls d-flex flex-column justify-content-center">
+            <h2 class="app-links-title text-center text-black-prim">CoLearn</h2>
+            <p class="app-links-desc text-center">Nền tảng học tập kết nốt</p>
+            <div class="d-flex links-btn align-items-center">
+              <a href="#"><img src="./assets/images/app-store-btn.svg" height="76px" alt="app-store"></a>
+              <a href="#"><img src="./assets/images/play-store-btn.svg" height="76px" alt="play-store"></a>
+            </div>
+          </div>
+          <div class="col-7 rs position-relative">
+            <img src="./assets/images/app-links-bg.png" alt="" class="absolute-img mw-100 ">
+            <div class="spec-desc sb-1 d-flex align-items-center position-absolute">
+              <img src="./assets/images/desc-img-lib.svg" alt="thu-vien-tu-hoc" class="spec-desc-img">
+              <p class="spec-desc-text mb-0">Thư viện và <br> công cụ tự học</p>
+            </div>
+            <div class="spec-desc sb-2 d-flex align-items-center position-absolute">
+              <img src="./assets/images/desc-img-qs.svg" alt="hoi-bai" class="spec-desc-img">
+              <p class="spec-desc-text mb-0">Hỏi bài nhanh <br> với gia sư</p>
+            </div>
+            <div class="spec-desc sb-3 d-flex align-items-center position-absolute">
+              <img src="./assets/images/desc-img-archive.svg" alt="lop-hoc-truc-tuyen" class="spec-desc-img">
+              <p class="spec-desc-text mb-0">Lớp học trực tuyến</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section questioning-section">
+      <div class="container">
+        <h3 class="home-page-section-title text-center text-black-prim">
+          Hỏi bài
+        </h3>
+        <div class="row mx-0">
+          <div class="col-6 ls">
+            <img src="./assets/images/qs-image-col.png" alt="qs-image-col" class="d-block mx-auto mw-100">
+          </div>
+          <div class="col-6 rs d-flex flex-column ">
+            <div class="each-step">
+              <input type="radio" id="test1" name="radio-group" checked>
+              <label for="test1" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-title text-black-prim">
+                  Hỏi bài gia sư
+                </p>
+                <p class="step-desc text-black-prim">
+                  Câu hỏi của học sinh sẽ được gia sư trả lời sau 15-30 phút
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="test2" name="radio-group">
+              <label for="test2" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-title text-black-prim">
+                  Tìm lời giải
+                </p>
+                <p class="step-desc text-black-prim">
+                  Tham khảo các lời giải mẫu từ cộng đồng và sách
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section online-class-section bg-white">
+      <div class="container">
+        <h3 class="home-page-section-title text-center text-black-prim">
+          Lớp học trực tuyến
+        </h3>
+        <div class="row mx-0">
+          <div class="col-6 rs d-flex flex-column ">
+            <h4 class="step-title">
+              Lớp học nhỏ (sĩ số &lt;5 học sinh/lớp)
+            </h4>
+            <div class="each-step">
+              <input type="radio" id="online-class-r-1" name="online-group" checked>
+              <label for="online-class-r-1" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Cố vấn học tập 1 kèm 1 giúp xây dựng kế hoạch học tập riêng cho từng học sinh theo đúng nguyện vọng
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-class-r-2" name="online-group">
+              <label for="online-class-r-2" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Lớp học được phân chia theo học lực của học sinh
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-class-r-3" name="online-group">
+              <label for="online-class-r-3" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Hướng dẫn phương pháp tự học hiệu quả tại nhà
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-class-r-4" name="online-group">
+              <label for="online-class-r-4" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Giáo viên theo sát từng bạn, đảm bảo học chắc kiến thức, nhớ lâu, vận dụng tốt trong các kỳ thi
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="col-6 ls">
+            <img src="./assets/images/online-class-image-col.png" alt="online-class-image-col"
+              class=" mw-100 d-block mx-auto">
+          </div>
 
-        <button id="advance-filter-btn"
-          class="btn btn-advance-toggle-filter color-darkgrey fw-500 btn-no-outline d-flex align-items-center collapsed"
-          data-target="#advance-filter" aria-controls="advance-filter">
-          <img src="./assets/images/icon/settings.svg" height="26px" class="setting-icon" title="Hiển thị bộ lọc"
-            alt="">
-          <img src="./assets/images/icon/close-dark.svg" height="26px" class="close-icon" title="Ẩn bộ lọc" alt="">
-          Bộ lọc
-        </button>
-        <div class="py-3 d-flex">
-          <!-- FILTER -->
-          <div class="lib-inner-advance-filter" id="advance-filter">
-            <div class="side-filter-wr">
-              <div class="list-tag dv-e pb-3">
-                <div class="each-tag color-slightgrey  mb-2 d-flex align-items-center justify-content-between">Chân trời
-                  sáng tạo <img class="pointer" src="./assets/images/icon/close.svg" alt=""></div>
-                <div class="each-tag color-slightgrey  mb-2 d-flex align-items-center justify-content-between">Toán
-                  <img class="pointer" src="./assets/images/icon/close.svg" alt="">
-                </div>
-                <div class="each-tag  mb-2 d-flex align-items-center justify-content-between">Xóa tất cả
-                  <img class="pointer" src="./assets/images/icon/close.svg" alt="">
-                </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section online-class-section section-2">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-6 ls mt-4">
+            <img src="./assets/images/online-class-image-col-b2.png" alt="online-class-image-col"
+              class=" mw-100 d-block mx-auto">
+          </div>
+          <div class="col-6 rs d-flex flex-column ">
+            <h4 class="step-title">
+              Lớp học tiêu chuẩn (sĩ số 10 - 15 học sinh/lớp)
+            </h4>
+            <div class="each-step">
+              <input type="radio" id="online-classb2-r-1" name="online-group2" checked>
+              <label for="online-classb2-r-1" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Cố vấn học tập giúp xây dựng lộ trình và kế hoạch học tập rõ ràng
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb2-r-2" name="online-group2">
+              <label for="online-classb2-r-2" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Cố vấn học tập giúp xây dựng lộ trình và kế hoạch học tập rõ ràng
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb2-r-3" name="online-group2">
+              <label for="online-classb2-r-3" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Giáo viên đồng hành và giải đáp toàn bộ thắc mắc trong quá trình học
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb2-r-4" name="online-group2">
+              <label for="online-classb2-r-4" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Được kiểm tra, đánh giá thường xuyên để điều chỉnh lộ trình học tập phù hợp
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb2-r-5" name="online-group2">
+              <label for="online-classb2-r-5" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Học Online không mất thời gian đi lại
+                </p>
+              </label>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section online-class-section section-3 bg-white">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-6 rs d-flex flex-column justify-content-center">
+            <h4 class="step-title">
+              Dạy kèm 1-1
+            </h4>
+            <div class="each-step">
+              <input type="radio" id="online-classb3-r-1" name="online-group3" checked>
+              <label for="online-classb3-r-1" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Các giáo viên giỏi, giàu kinh nghiệm dạy kèm online
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb3-r-2" name="online-group3">
+              <label for="online-classb3-r-2" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Bài tập cá nhân hóa theo nhu cầu
+                </p>
+              </label>
+            </div>
+            <div class="each-step">
+              <input type="radio" id="online-classb3-r-3" name="online-group3">
+              <label for="online-classb3-r-3" class="position-relative mb-0">
+                <div class="divider-h position-absolute"></div>
+                <p class="step-text text-black-prim">
+                  Giáo viên đồng hành theo sát và điều chỉnh học tập phù hợp
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="col-6 ls">
+            <img src="./assets/images/online-class-image-col-b3.png" alt="online-class-image-col"
+              class=" mw-100 d-block mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section lib-n-supplies-section">
+      <div class="container">
+        <h3 class="home-page-section-title text-center">
+          Thư viện và công cụ học tập
+        </h3>
+        <div class="row mx-0">
+          <div class="col-4 each-block">
+            <p class="block-title text-black-prim text-center font-weight-bold">
+              Chuyên đề
+            </p>
+            <div class="block-card  d-flex flex-column justify-content-between"
+              style="background-image: url('./assets/images/block-card-bg.svg');">
+              <div class="list-text d-flex flex-column justify-content-center">
+                <div class="text-item text-white">Hệ thống video bài giảng theo chủ đề.</div>
+                <div class="text-item text-white">Tài liệu, bài tập, trắc nghiệm theo lộ trình học.</div>
+                <div class="text-item text-white">Các buổi live hướng dẫn, ôn tập.</div>
               </div>
-              <div class="filter-cate list-cate pb-3 ">
-                <!-- EACH CATE -->
-                <div class="each-cate dv-e">
-                  <p class="cate-header color-darkgrey d-flex align-items-center pointer collapsed"
-                    data-toggle="collapse" data-target="#cate-1" aria-expanded="true" aria-controls="cate-1">
-                    <img src="./assets/images/icon/book.svg" alt="" class="cate-icon">
-                    <span class="cate-name">Bộ sách</span>
-                    <img src="./assets/images/icon/chevron-up.svg" alt="" class="expand-icon ml-auto">
-                  </p>
-                  <ul class="collapse multi-collapse show cate-items px-0" id="cate-1">
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-1-item-1">
-                      <label for="cate-1-item-1" class="mb-0 w-100 item-label color-darkgrey">Tất cả</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-1-item-2">
-                      <label for="cate-1-item-2" class="mb-0 w-100 item-label color-darkgrey">Kết nối tri thức với cuộc
-                        sống</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" checked name="" id="cate-1-item-3">
-                      <label for="cate-1-item-3" class="mb-0 w-100 item-label color-darkgrey">Chân trời sáng tạo</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-1-item-4">
-                      <label for="cate-1-item-4" class="mb-0 w-100 item-label color-darkgrey">Cùng học để phát triển
-                        năng lực</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-1-item-5">
-                      <label for="cate-1-item-5" class="mb-0 w-100 item-label color-darkgrey">Cánh diều</label>
-                    </li>
-                  </ul>
-                </div>
-                <!-- END -->
-                <div class="each-cate">
-                  <p class="cate-header color-darkgrey d-flex align-items-center pointer collapsed"
-                    data-toggle="collapse" data-target="#cate-2" aria-expanded="true" aria-controls="cate-2">
-                    <img src="./assets/images/icon/book-open.svg" alt="" class="cate-icon">
-                    <span class="cate-name">Môn học</span>
-                    <img src="./assets/images/icon/chevron-up.svg" alt="" class="expand-icon ml-auto">
-                  </p>
-                  <ul class="collapse multi-collapse show cate-items px-0" id="cate-2">
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" checked name="" id="cate-2-item-1">
-                      <label for="cate-2-item-1" class="mb-0 w-100 item-label color-darkgrey">Toán</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-2-item-2">
-                      <label for="cate-2-item-2" class="mb-0 w-100 item-label color-darkgrey">Tiếng anh</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-2-item-3">
-                      <label for="cate-2-item-3" class="mb-0 w-100 item-label color-darkgrey">Ngữ văn</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-2-item-4">
-                      <label for="cate-1-item-4" class="mb-0 w-100 item-label color-darkgrey">Vật lí</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-2-item-5">
-                      <label for="cate-2-item-5" class="mb-0 w-100 item-label color-darkgrey">Hóa học</label>
-                    </li>
-                    <li class="cate-item d-flex align-items-center pointer">
-                      <input type="checkbox" name="" id="cate-2-item-6">
-                      <label for="cate-2-item-6" class="mb-0 w-100 item-label color-darkgrey">Sinh học</label>
-                    </li>
-                  </ul>
+              <img src="./assets/images/block-card-img.svg" class="d-block mx-auto mw-100" alt="">
+            </div>
+          </div>
+          <div class="col-4 each-block">
+            <p class="block-title text-black-prim text-center font-weight-bold">
+              Trắc nghiệm
+            </p>
+            <div class="block-card  d-flex flex-column justify-content-between"
+              style="background-image: url('./assets/images/block-card-bg.svg');">
+              <div class="list-text d-flex flex-column justify-content-center">
+                <div class="text-item text-white">Bài tập có đáp án và lời giải chi tiết.</div>
+                <div class="text-item text-white">Luôn được cập nhật mới nhất.</div>
+              </div>
+              <img src="./assets/images/block-card-img-2.svg" class="d-block mx-auto mw-100" alt="">
+            </div>
+          </div>
+          <div class="col-4 each-block">
+            <p class="block-title text-black-prim text-center font-weight-bold">
+              Tài liệu
+            </p>
+            <div class="block-card  d-flex flex-column justify-content-between"
+              style="background-image: url('./assets/images/block-card-bg.svg');">
+              <div class="list-text d-flex flex-column justify-content-center">
+                <div class="text-item text-white">Kho tài liệu phong phú đa dạng.</div>
+              </div>
+              <img src="./assets/images/block-card-img-3.svg" class="d-block mx-auto mw-100" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section teachers-section  bg-white">
+      <div class="container">
+        <h3 class="home-page-section-title text-center">
+          Đội ngũ giáo viên
+        </h3>
+        <div class="d-flex teachers-wr justify-content-between">
+          <div class="each-teacher-card tc-1">
+            <img src="./assets/images/teacher-avatar-2.png" alt="teacher-avatar"
+              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+            <p class="teacher-name text-center">
+              Thạc sĩ <br>
+              Nguyễn Thùy Linh
+            </p>
+            <p class="teacher-desc text-center">
+              Cử nhân sư phạm môn Ngữ Văn
+            </p>
+            <p class="teacher-pos text-center">
+              (GV môn Ngữ Văn)
+            </p>
+          </div>
+
+          <div class="each-teacher-card tc-2">
+            <img src="./assets/images/teacher-avatar-3.png" alt="teacher-avatar"
+              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+            <p class="teacher-name text-center">
+              Cô<br>
+              Nguyễn Hương Giang
+            </p>
+            <p class="teacher-desc text-center">
+              Cử nhân sư phạm môn Tiếng Anh
+            </p>
+            <p class="teacher-pos text-center">
+              (GV môn Tiếng Anh)
+            </p>
+          </div>
+
+          <div class="each-teacher-card tc-3">
+            <img src="./assets/images/teacher-avatar-4.png" alt="teacher-avatar"
+              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+            <p class="teacher-name text-center">
+              Thầy<br>
+              Nguyễn Trung Anh
+            </p>
+            <p class="teacher-desc text-center">
+              Trường THPT FPT
+            </p>
+            <p class="teacher-pos text-center">
+              (GV môn Toán)
+            </p>
+          </div>
+
+          <div class="each-teacher-card tc-4">
+            <img src="./assets/images/teacher-avatar-5.png" alt="teacher-avatar"
+              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+            <p class="teacher-name text-center">
+              Thạc sĩ <br>
+              Phan Hồng Hải
+            </p>
+            <p class="teacher-desc text-center">
+              Cử nhân sư phạm môn Hóa Học
+            </p>
+            <p class="teacher-pos text-center">
+              (GV môn Hóa Học)
+            </p>
+          </div>
+
+          <div class="each-teacher-card tc-5">
+            <img src="./assets/images/teacher-avatar-1.png" alt="teacher-avatar"
+              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+            <p class="teacher-name text-center">
+              Thạc sĩ<br>
+              Nga Sinh
+            </p>
+            <p class="teacher-desc text-center">
+              Cử nhân sư phạm môn Ngữ Văn
+            </p>
+            <p class="teacher-pos text-center">
+              (GV môn Ngữ Văn)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section comments-section"
+      style="background-image: url('./assets/images/comments-bg.png');">
+      <div class="container">
+        <h3 class="home-page-section-title text-center text-white">
+          Học sinh nói gì về CoLearn 😍
+        </h3>
+        <div class="row mx-0">
+          <div class="col-6 px-4">
+            <div class="comment-card">
+              <div class="text-block bg-white">
+                <h4 class="title text-center mb-3">“Incredible Experience”</h4>
+                <p class="desc text-center">We had an incredible experience working with Mixland and were
+                  impressed they made such a big difference in only three weeks. Our team is so grateful for the
+                  wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+              </div>
+              <div class="user-block d-flex align-items-center justify-content-center mt-4">
+                <img src="./assets/images/user-avatar-1.svg" alt="user-avatar" width="62px" height="62px">
+                <div class="user-info">
+                  <p class="user-name text-white mb-0">Jane Cooper</p>
+                  <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- LIST DATA -->
-          <div class="list-data w-100" id="list-data">
-            <div class="normal-filter">
-              <div class="dropdown select-fk">
-                <p class="btn d-flex align-items-center justify-content-between dropdown-toggle mb-0 selected-data color-darkgrey"
-                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Chuyên đề
-                  <img src="./assets/images/icon/chevron-dropdown.svg" alt="">
-                </p>
-                <div class="dropdown-menu select-items" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item on-active" href="#">Chuyên đề</a>
-                  <a class="dropdown-item" href="#">Video</a>
-                </div>
+          <div class="col-6 px-4">
+            <div class="comment-card">
+              <div class="text-block bg-white">
+                <h4 class="title text-center mb-3">“Dependable, Responsive, Professional”</h4>
+                <p class="desc text-center">Fermin Apps has collaborated with Mixland team for several projects such as
+                  Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional
+                  and exceeding our expectations. The team is always thinking beyond.</p>
               </div>
-              <div class="search-block d-flex align-items-center bg-white w-100">
-                <img src="./assets/images/icon/lookup-light.svg" class="search-icon" alt="">
-                <input type="text" class="color-darkgrey" placeholder="Nhập từ khóa tìm kiếm">
-                <div class="append-block pointer">Tìm kiếm</div>
-              </div>
-            </div>
-
-            <div class="data-block my-4">
-              <div class="swiper customerSwiper px-4">
-                <p class="data-block-title color-darkgrey">Chuyên đề đang học</p>
-
-                <div class="swiper-wrapper align-items-stretch ">
-                  <!-- ONE SLIDE -->
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod prod-followed">
-                      <div class="card">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                          </div>
-                          <div class="prod-video-counter color-slightgrey2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            29 video
-                          </div>
-                          <div class="prod-video-live-stream-counter color-slightgrey2">
-                            <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                            5 buổi Livestream
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END -->
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                          </div>
-                          <div class="prod-video-counter color-slightgrey2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            29 video
-                          </div>
-                          <div class="prod-video-live-stream-counter color-slightgrey2">
-                            <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                            5 buổi Livestream
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod prod-followed">
-                      <div class="card">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                          </div>
-                          <div class="prod-video-counter color-slightgrey2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            29 video
-                          </div>
-                          <div class="prod-video-live-stream-counter color-slightgrey2">
-                            <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                            5 buổi Livestream
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod prod-followed">
-                      <div class="card">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                          </div>
-                          <div class="prod-video-counter color-slightgrey2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            29 video
-                          </div>
-                          <div class="prod-video-live-stream-counter color-slightgrey2">
-                            <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                            5 buổi Livestream
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod prod-followed">
-                      <div class="card">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-                          </div>
-                          <div class="prod-video-counter color-slightgrey2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            29 video
-                          </div>
-                          <div class="prod-video-live-stream-counter color-slightgrey2">
-                            <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                            5 buổi Livestream
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-              </div>
-              <div class="container sw-nav-container">
-                <div class="navigator-btn">
-                  <div class="custom-nav-prev btn-nav-prev  custom-navigator-btn pointer"><img
-                      src="./assets/images/icon/chevron-right.svg" alt=""></div>
-                  <div class="custom-nav-next btn-nav-next custom-navigator-btn pointer"><img
-                      src="./assets/images/icon/chevron-right.svg" alt=""></div>
-                </div>
-              </div>
-            </div>
-            <div class="data-block my-4">
-              <div class="swiper customerSwiper px-4">
-                <p class="data-block-title color-darkgrey d-flex align-items-center justify-content-between">Chuyên đề
-                  lớp 12
-
-                  <span class="d-flex align-items-center">
-                    <img src="./assets/images/icon/list-grey.svg" class="mr-2 pointer" alt="">
-                    <img src="./assets/images/icon/app.svg" alt="" class="pointer">
-                  </span>
-                </p>
-                <div class="data-divider"></div>
-                <div class="list-cards row mt-4 ">
-                  <!-- ONE CARD LIST -->
-                  <div class="col col-12 card-list-view card-prod ">
-                    <div class="card flex-row flex-nowrap">
-                      <div class="preview-image">
-                        <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                          class="follow-icon pointer btn-follow" alt="">
-                        <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                          class="follow-icon pointer btn-unfollow" alt="">
-                        <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      </div>
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END -->
-
-                  <!-- ONE CARD -->
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END -->
-
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod prod-followed">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod prod-followed">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-3 card-prod ">
-                    <div class="card">
-                      <img src="./assets/images/icon/white-circle-plus.svg" title="Theo dõi"
-                        class="follow-icon pointer btn-follow" alt="">
-                      <img src="./assets/images/icon/black-circle-plus.svg" title="Bỏ theo dõi"
-                        class="follow-icon pointer btn-unfollow" alt="">
-                      <img class="card-img-top" src="./assets/images/prod-image.png" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="prod-title limit-line-2">
-                          Ôn thi THPT môn Vật Lí 12 Theo chuyên đề môn Tiếng Anh 2022
-                        </p>
-                        <div class="prod-users">
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                          <div class="user color-slightgrey2">
-
-                            <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                            Lê Đình Lâm
-                          </div>
-                        </div>
-                        <div class="prod-video-counter color-slightgrey2">
-                          <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                          29 video
-                        </div>
-                        <div class="prod-video-live-stream-counter color-slightgrey2">
-                          <img src="./assets/images/icon/live-stream-icon.svg" alt="">
-                          5 buổi Livestream
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="data-block my-4">
-              <div class="swiper justwatchSwiper px-4">
-                <p class="data-block-title color-darkgrey">Vừa xem</p>
-
-                <div class="swiper-wrapper align-items-stretch ">
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card card-small h-100 c-divider c-creator-tag">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            <img src="./assets/images/icon/blue-doc.svg" alt="">
-                            Dòng điện trong chân không, không khí
-                          </p>
-                          <div class="data-divider"></div>
-
-                          <div class="small-tag color-slightgrey2">
-                            Lớp 12 . Vật lý
-                          </div>
-                          <div class="creator-tag ">
-                            Biên soạn: <span class="creator-name">CoLearn</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card card-small h-100">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            <img src="./assets/images/icon/play-btn-icon.svg" alt="">
-                            Video 4.2 - Ôn luyện thi THPT môn Vật Lí 12
-                          </p>
-                          <div class="prod-users">
-                            <div class="user color-slightgrey2">
-
-                              <img src="./assets/images/icon/user-avatar.svg" alt="" class="user-avatar">
-                              Lê Đình Lâm
-                            </div>
-
-                          </div>
-                          <div class="small-tag color-slightgrey2">
-                            Lớp 12 . Vật lý
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card card-small h-100 c-divider c-creator-tag">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            <img src="./assets/images/icon/pink-pdf.svg" alt="">
-                            Dòng điện trong chân không, không khí
-                          </p>
-                          <div class="data-divider"></div>
-
-                          <div class="small-tag color-slightgrey2">
-                            Lớp 12 . Vật lý
-                          </div>
-                          <div class="creator-tag ">
-                            Biên soạn: <span class="creator-name">CoLearn</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card card-small h-100 c-divider c-creator-tag c-mcq ">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            <img src="./assets/images/icon/union-icon.svg" alt="">
-                            Dòng điện trong chân không, không khí
-                          </p>
-                          <div class="data-divider"></div>
-
-                          <div class="mcq-time-tag d-flex flex-wrap align-items-center">
-                            <div class="small-tag color-slightgrey2">
-                              Lớp 12 . Vật lý
-                            </div>
-                            <div class="mcq-time color-slightgrey2">
-                              <img src="./assets/images/icon/time-circle.svg" alt=""> 15 phút
-                            </div>
-                          </div>
-                          <div class="mcq-count-source d-flex flex-wrap align-items-center">
-                            <div class="creator-tag ">
-                              <em>Nguồn:</em> Sưu tầm
-                            </div>
-                            <div class="mcq-count color-slightgrey2">
-                              <img src="./assets/images/icon/question-circle.svg" alt=""> 10 câu
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide inner-content-wt ">
-                    <div class="h-100 card-prod ">
-                      <div class="card card-small h-100 c-divider c-creator-tag">
-                        <div class="card-body">
-                          <p class="prod-title limit-line-2">
-                            <img src="./assets/images/icon/blue-doc.svg" alt="">
-                            Dòng điện trong chân không, không khí
-                          </p>
-                          <div class="data-divider"></div>
-
-                          <div class="small-tag color-slightgrey2">
-                            Lớp 12 . Vật lý
-                          </div>
-                          <div class="creator-tag ">
-                            Biên soạn: <span class="creator-name">CoLearn</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-              </div>
-              <div class="container sw-nav-container">
-                <div class="navigator-btn">
-                  <div class="just-watch-nav-prev btn-nav-prev custom-navigator-btn pointer"><img
-                      src="./assets/images/icon/chevron-right.svg" alt=""></div>
-                  <div class="just-watch-nav-next btn-nav-next custom-navigator-btn pointer"><img
-                      src="./assets/images/icon/chevron-right.svg" alt=""></div>
+              <div class="user-block d-flex align-items-center justify-content-center mt-4">
+                <img src="./assets/images/user-avatar-2.svg" alt="user-avatar" width="62px" height="62px">
+                <div class="user-info">
+                  <p class="user-name text-white mb-0">Esther Howard</p>
+                  <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="home-page-section news-section">
+      <div class="container">
+        <h3 class="home-page-section-title text-center text-white text-black-prim">
+          Báo chí nói về CoLearn
+        </h3>
+        <div class="d-flex list-news-logo align-items-center px-3">
+          <img src="./assets/images/news-1.png" alt="news-logo" class="news-logo-img">
+          <img src="./assets/images/news-logo-2.png" alt="news-logo" class="news-logo-img">
+          <img src="./assets/images/news-logo-3.png" alt="news-logo" class="news-logo-img">
+          <img src="./assets/images/news-logo-4.png" alt="news-logo" class="news-logo-img">
+          <img src="./assets/images/news-logo-5.png" alt="news-logo" class="news-logo-img">
+          <img src="./assets/images/news-logo-6.png" alt="news-logo" class="news-logo-img">
+        </div>
+      </div>
     </section>
   </main>
-
-  <!-- BTN SCROLL UP -->
-  <div id="btnScrollToTop" class="btn-scroll-to-top pointer" id="top-link"><img
-      src="./assets/images/icon/white-arrow-up.svg" alt=""></div>
-  <!-- SCRIPT -->
-  <!-- CDN -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/home.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

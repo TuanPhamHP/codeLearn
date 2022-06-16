@@ -1,22 +1,36 @@
-.company-info{
-	line-height: 35px;
+.company-info {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 12px;
 }
-.ft-block-title{
+.footer {
+	background-color: #fafdff;
+}
+.license {
+	font-size: 16px;
+	line-height: 28px;
+}
+.ft-block-title {
 	margin-top: 10px;
 	line-height: 16px;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 21px;
 }
 a.ft-block__content {
 	line-height: 27px;
 }
 .iconby {
 	width: 20px;
+	padding: 1px;
 }
 .footer-logo {
 	margin-bottom: 27px;
 	padding-left: 0;
 	width: 209px;
 }
-.app-links>a {
+.app-links > a {
 	width: 120px;
 }
 .connect-youtube {
@@ -25,6 +39,10 @@ a.ft-block__content {
 .connect-facebook {
 	width: 20px;
 }
-.copyright-footer{
-	padding: 2px;
+.copyright-footer {
+	padding: 22px;
+	border-top: 1px solid #e6e6e6;
+}
+.text-u-img {
+	margin-top: 50px;
 }

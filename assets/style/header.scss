@@ -1,0 +1,50 @@
+.page-header {
+	ul.navbar-nav {
+		padding-left: 76px;
+		.nav-item {
+			display: flex;
+			align-items: center;
+			.nav-link {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 23px;
+				padding: 10px 12px;
+				margin: 0 12px;
+				height: 89px;
+				display: flex;
+				align-items: center;
+			}
+			&.active {
+				.nav-link {
+					color: #4643f0 !important;
+					position: relative;
+					&::after {
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 6px;
+						border-radius: 3px;
+						background-color: #4643f0;
+						bottom: 0;
+						left: 0;
+					}
+				}
+			}
+			.btn-register,
+			.btn-login {
+				border-radius: 22px;
+				height: 45px;
+				width: 115px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 23px;
+			}
+			.btn-register {
+				background: #4643f0;
+			}
+			.btn-login {
+				color: #9b9b9b;
+			}
+		}
+	}
+}
