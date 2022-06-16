@@ -10,6 +10,8 @@
 	//
 	.app-links-section {
 		padding: 125px 0 90px 0;
+		background-repeat: no-repeat;
+		background-size: cover;
 		.ls {
 			.app-links-title {
 				font-weight: 800;
@@ -74,6 +76,7 @@
 		}
 		.rs {
 			padding-top: 115px;
+			padding-left: 56px;
 			.each-step {
 				.step-title {
 					font-weight: 600;

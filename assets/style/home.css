@@ -11,6 +11,8 @@
 
 .home-page-main .app-links-section {
   padding: 125px 0 90px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-page-main .app-links-section .ls .app-links-title {
@@ -83,6 +85,7 @@
 
 .home-page-main .questioning-section .rs {
   padding-top: 115px;
+  padding-left: 56px;
 }
 
 .home-page-main .questioning-section .rs .each-step .step-title {
