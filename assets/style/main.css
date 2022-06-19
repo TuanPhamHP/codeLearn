@@ -186,16 +186,25 @@ body .hide-on-mobile-flex {
   display: none !important;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   body .container {
     min-width: 1380px;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .header {
-    height: 186px;
+@media only screen and (min-width: 1200px) {
+  body .container {
+    min-width: 1280px;
   }
+  body .footer-main__container {
+    min-width: 1280px;
+  }
+  body .copyright-footer {
+    min-width: 1280px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   body .container {
     padding: 0;
   }
@@ -204,18 +213,6 @@ body .hide-on-mobile-flex {
   }
   .hide-lower-991 {
     display: none !important;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .footer-main__container {
-    min-width: 1280px;
-  }
-  .container {
-    min-width: 1280px;
-  }
-  .copyright-footer {
-    min-width: 1280px;
   }
 }
 

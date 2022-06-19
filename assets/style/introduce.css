@@ -109,6 +109,10 @@
   height: 780px;
 }
 
+.intro-page-main .questioning-section .tab-pane .eg-image {
+  z-index: 2;
+}
+
 .intro-page-main .questioning-section .tab-pane .step-counter {
   font-weight: 800;
   font-size: 240px;
@@ -118,6 +122,7 @@
   position: absolute;
   right: 20px;
   bottom: 100px;
+  z-index: 1;
 }
 
 .intro-page-main .archive-section {
@@ -163,5 +168,13 @@
 
 .intro-page-main .apps-section .ls .links-btn {
   gap: 24px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .intro-page-main .intro-banner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 /*# sourceMappingURL=introduce.css.map */

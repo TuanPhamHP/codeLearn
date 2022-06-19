@@ -530,4 +530,21 @@
 .home-page-main .news-section .list-news-logo .news-logo-img {
   max-height: 68px;
 }
+
+@media only screen and (max-width: 1400px) {
+  .home-page-main .home-banner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .home-page-main .news-section .list-news-logo {
+    gap: 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home-page-main .news-section .list-news-logo .news-logo-img {
+    max-height: 68px;
+  }
+}
 /*# sourceMappingURL=home.css.map */

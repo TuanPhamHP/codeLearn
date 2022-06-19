@@ -93,6 +93,9 @@
 
 		.tab-pane {
 			height: 780px;
+			.eg-image {
+				z-index: 2;
+			}
 			.step-counter {
 				font-weight: 800;
 				font-size: 240px;
@@ -102,6 +105,7 @@
 				position: absolute;
 				right: 20px;
 				bottom: 100px;
+				z-index: 1;
 			}
 		}
 	}
@@ -148,5 +152,13 @@
 				gap: 24px;
 			}
 		}
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.intro-page-main {
+		.intro-banner {
+			height: fit-content;
+		}
+		//
 	}
 }

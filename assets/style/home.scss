@@ -487,3 +487,21 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1400px) {
+	.home-page-main {
+		.home-banner {
+			height: fit-content;
+		}
+		//
+		.news-section {
+			.list-news-logo {
+				gap: 0px;
+				justify-content: space-between;
+				.news-logo-img {
+					max-height: 68px;
+				}
+			}
+		}
+	}
+}
