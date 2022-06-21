@@ -408,7 +408,7 @@
 
 .home-page-main .teachers-section .each-teacher-card .teacher-avatar {
   width: 180px;
-  height: 180px;
+  aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 18px;
