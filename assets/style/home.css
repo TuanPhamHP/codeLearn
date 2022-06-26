@@ -9,6 +9,11 @@
      object-fit: cover;
 }
 
+.home-page-main .home-banner .banner-tb,
+.home-page-main .home-banner .banner-mb {
+  display: none;
+}
+
 .home-page-main .app-links-section {
   padding: 125px 0 60px 0;
   background-repeat: no-repeat;
@@ -398,12 +403,15 @@
 }
 
 .home-page-main .teachers-section .each-teacher-card {
+  height: 350px;
   border-radius: 104px 104px 0px 104px;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   padding: 24px;
   max-width: 228px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .home-page-main .teachers-section .each-teacher-card .teacher-avatar {
@@ -474,6 +482,7 @@
   border-radius: 14px;
   padding: 30px 42px;
   position: relative;
+  height: 270px;
 }
 
 .home-page-main .comments-section .comment-card .text-block .title {
@@ -486,6 +495,13 @@
   font-size: 18px;
   line-height: 28px;
   color: rgba(56, 58, 71, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .home-page-main .comments-section .comment-card .text-block::after {
@@ -551,6 +567,641 @@
   }
   .home-page-main .news-section .list-news-logo .news-logo-img {
     max-height: 68px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .home-page-main .news-section {
+    display: none;
+  }
+  .home-page-main .home-banner .banner-ds,
+  .home-page-main .home-banner .banner-mb {
+    display: none;
+  }
+  .home-page-main .home-banner .banner-tb {
+    display: block;
+  }
+  .home-page-main .app-links-section {
+    padding: 40px 0 60px 0;
+  }
+  .home-page-main .app-links-section .ls,
+  .home-page-main .app-links-section .rs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .app-links-section .ls .app-links-title {
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
+  .home-page-main .app-links-section .ls .app-links-desc {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .home-page-main .app-links-section .ls .links-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 55px;
+  }
+  .home-page-main .app-links-section .rs .absolute-img {
+    width: 420px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc {
+    width: 330px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-1 {
+    top: 55px;
+    right: 76px;
+    padding: 30px 16px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-2 {
+    bottom: 88px;
+    right: 96px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-3 {
+    bottom: 50px;
+    left: 22px;
+    width: 280px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text br {
+    display: none;
+  }
+  .home-page-main .questioning-section {
+    padding: 36px 0 25px;
+  }
+  .home-page-main .questioning-section .home-page-section-title {
+    font-size: 28px;
+  }
+  .home-page-main .questioning-section .rs {
+    padding-top: 25px;
+    padding-left: 36px;
+  }
+  .home-page-main .questioning-section .rs .each-step .step-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .home-page-main .questioning-section .rs .each-step .step-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  .home-page-main .questioning-section .rs .each-step .divider-h {
+    width: 1px;
+    height: 100%;
+    background-color: #cbcbcb;
+    top: 15px;
+    bottom: 0;
+    z-index: 3;
+  }
+  .home-page-main .questioning-section .rs .each-step:nth-last-of-type(1) .divider-h {
+    top: 15px;
+    height: 10px;
+  }
+  .home-page-main .questioning-section .rs .each-step:nth-of-type(1) .divider-h {
+    top: 27px;
+  }
+  .home-page-main .questioning-section [type='radio']:checked + label,
+  .home-page-main .questioning-section [type='radio']:not(:checked) + label {
+    padding-left: 34px;
+  }
+  .home-page-main .questioning-section [type='radio']:checked + label:before {
+    z-index: 4;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 19px;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #4643f0;
+    border-radius: 100%;
+    background: #fff;
+  }
+  .home-page-main .questioning-section [type='radio']:not(:checked) + label:after {
+    z-index: 4;
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #cbcbcb;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .home-page-main .questioning-section [type='radio']:checked + label:after {
+    z-index: 4;
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #4643f0;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .home-page-main .online-class-section {
+    padding: 32px 0 50px;
+  }
+  .home-page-main .online-class-section.section-2 {
+    padding: 45px 0 40px;
+  }
+  .home-page-main .online-class-section.section-2 .ls {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 32px !important;
+  }
+  .home-page-main .online-class-section.section-3 {
+    padding: 32px 0 40px;
+  }
+  .home-page-main .online-class-section.section-3 .ls {
+    margin-top: 32px !important;
+  }
+  .home-page-main .online-class-section .rs,
+  .home-page-main .online-class-section .ls {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .online-class-section .home-page-section-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  .home-page-main .online-class-section .rs {
+    padding-top: 0;
+  }
+  .home-page-main .online-class-section .rs .step-title {
+    padding-left: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .home-page-main .online-class-section .rs .each-step .step-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .home-page-main .online-class-section .ls {
+    margin-top: 60px;
+  }
+  .home-page-main .online-class-section [type='radio']:checked + label .step-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .home-page-main .lib-n-supplies-section {
+    padding: 24px 0 0px;
+  }
+  .home-page-main .lib-n-supplies-section .each-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .home-page-main .lib-n-supplies-section .each-block .block-title {
+    text-align: left !important;
+  }
+  .home-page-main .teachers-section {
+    padding: 50px 0;
+  }
+  .home-page-main .teachers-section .each-teacher-card {
+    height: 360px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .home-page-main .comments-section {
+    padding: 36px 0;
+  }
+  .home-page-main .comments-section .home-page-section-title {
+    font-size: 28px;
+    margin-bottom: 26px;
+  }
+  .home-page-main .comments-section .cmt-col .comment-card .text-block {
+    padding: 20px 10px 18px 10px;
+    height: 240px;
+  }
+  .home-page-main .comments-section .cmt-col .comment-card .title {
+    font-size: 16px;
+    margin-bottom: 6px !important;
+  }
+  .home-page-main .comments-section .cmt-col .comment-card .desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .home-page-main .news-section {
+    padding: 32px 0 60px;
+    display: block;
+  }
+  .home-page-main .news-section .home-page-section-title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .home-page-main .home-banner .banner-ds,
+  .home-page-main .home-banner .banner-tb {
+    display: none;
+  }
+  .home-page-main .home-banner .banner-mb {
+    display: block;
+  }
+  .home-page-main .app-links-section {
+    padding: 22px 0 40px 0;
+  }
+  .home-page-main .app-links-section .ls,
+  .home-page-main .app-links-section .rs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .app-links-section .ls .app-links-title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .home-page-main .app-links-section .ls .app-links-desc {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  .home-page-main .app-links-section .ls .links-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 16px;
+  }
+  .home-page-main .app-links-section .ls .links-btn img {
+    width: 120px;
+    height: auto;
+  }
+  .home-page-main .app-links-section .rs .absolute-img {
+    min-width: 182px;
+    width: 60%;
+    margin-left: 0;
+  }
+  .home-page-main .app-links-section .rs .spec-desc {
+    width: 170px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 24px !important;
+  }
+  .home-page-main .app-links-section .rs .spec-desc .spec-desc-img {
+    border-radius: 100%;
+    width: 24px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-1 {
+    top: 25px;
+    right: 66px;
+    padding: 8px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-2 {
+    bottom: 56px;
+    right: 66px;
+    width: 180px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-3 {
+    bottom: 50px;
+    left: 22px;
+    width: 157px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text br {
+    display: none;
+  }
+  .home-page-main .questioning-section {
+    padding: 23px 0 25px;
+  }
+  .home-page-main .questioning-section .home-page-section-title {
+    font-size: 24px;
+  }
+  .home-page-main .questioning-section .rs,
+  .home-page-main .questioning-section .ls {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .questioning-section .ls {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .home-page-main .questioning-section .ls .radio-banner {
+    margin-left: 0 !important;
+  }
+  .home-page-main .questioning-section .rs {
+    padding-left: 10px;
+  }
+  .home-page-main .questioning-section .rs .each-step .step-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .home-page-main .questioning-section .rs .each-step .step-desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .home-page-main .questioning-section .rs .each-step .divider-h {
+    width: 1px;
+    height: 100%;
+    background-color: #cbcbcb;
+    left: 10px;
+    bottom: 0;
+    z-index: 3;
+  }
+  .home-page-main .questioning-section .rs .each-step:nth-last-of-type(1) .divider-h {
+    top: 0;
+    height: 10px;
+  }
+  .home-page-main .questioning-section .rs .each-step:nth-of-type(1) .divider-h {
+    top: 12px;
+  }
+  .home-page-main .questioning-section [type='radio']:checked + label:before {
+    z-index: 4;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #4643f0;
+    border-radius: 100%;
+    background: #fff;
+  }
+  .home-page-main .questioning-section [type='radio']:not(:checked) + label:after {
+    z-index: 4;
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #cbcbcb;
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .home-page-main .questioning-section [type='radio']:checked + label:after {
+    z-index: 4;
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #4643f0;
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .home-page-main .online-class-section {
+    padding: 32px 0 50px;
+  }
+  .home-page-main .online-class-section.section-2 {
+    padding: 45px 0 40px;
+  }
+  .home-page-main .online-class-section.section-2 .ls {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 32px !important;
+  }
+  .home-page-main .online-class-section.section-3 {
+    padding: 32px 0 40px;
+  }
+  .home-page-main .online-class-section.section-3 .ls {
+    margin-top: 32px !important;
+  }
+  .home-page-main .online-class-section .home-page-section-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .home-page-main .online-class-section .rs {
+    padding-top: 0;
+  }
+  .home-page-main .online-class-section .rs .step-title {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .home-page-main .online-class-section .rs .each-step .step-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .home-page-main .online-class-section .ls {
+    margin-top: 30px;
+  }
+  .home-page-main .online-class-section [type='radio'] + label {
+    padding-left: 40px !important;
+  }
+  .home-page-main .lib-n-supplies-section {
+    padding: 18px 0 0px;
+  }
+  .home-page-main .lib-n-supplies-section .home-page-section-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .home-page-main .lib-n-supplies-section .each-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .home-page-main .lib-n-supplies-section .each-block .block-title {
+    text-align: left !important;
+  }
+  .home-page-main .app-links-section {
+    padding: 22px 0 40px 0;
+  }
+  .home-page-main .app-links-section .ls,
+  .home-page-main .app-links-section .rs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .app-links-section .ls .app-links-title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .home-page-main .app-links-section .ls .app-links-desc {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  .home-page-main .app-links-section .ls .links-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 16px;
+  }
+  .home-page-main .app-links-section .ls .links-btn img {
+    width: 120px;
+    height: auto;
+  }
+  .home-page-main .app-links-section .rs .absolute-img {
+    min-width: 182px;
+    width: 60%;
+    margin-left: 0;
+  }
+  .home-page-main .app-links-section .rs .spec-desc {
+    width: 170px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 24px !important;
+  }
+  .home-page-main .app-links-section .rs .spec-desc .spec-desc-img {
+    border-radius: 100%;
+    width: 24px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-1 {
+    top: 25px;
+    right: 30px;
+    padding: 8px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-2 {
+    bottom: 46px;
+    right: 30px;
+    width: 180px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-3 {
+    bottom: 50px;
+    left: 22px;
+    width: 157px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text br {
+    display: none;
+  }
+  .home-page-main .teachers-section {
+    padding-top: 24px;
+  }
+  .home-page-main .teachers-section .home-page-section-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+  .home-page-main .teachers-section .each-teacher-card {
+    margin: 15px auto;
+  }
+  .home-page-main .comments-section .cmt-col .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  .home-page-main .comments-section .cm-swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .home-page-main .app-links-section {
+    padding: 22px 0 40px 0;
+  }
+  .home-page-main .app-links-section .ls,
+  .home-page-main .app-links-section .rs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-page-main .app-links-section .ls .app-links-title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .home-page-main .app-links-section .ls .app-links-desc {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  .home-page-main .app-links-section .ls .links-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 16px;
+  }
+  .home-page-main .app-links-section .ls .links-btn img {
+    width: 120px;
+    height: auto;
+  }
+  .home-page-main .app-links-section .rs .absolute-img {
+    min-width: 182px;
+    width: 60%;
+    margin-left: 0;
+  }
+  .home-page-main .app-links-section .rs .spec-desc {
+    width: 170px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 24px !important;
+  }
+  .home-page-main .app-links-section .rs .spec-desc .spec-desc-img {
+    border-radius: 100%;
+    width: 24px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-1 {
+    top: 25px;
+    right: 38px;
+    padding: 8px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-2 {
+    bottom: 46px;
+    right: 38px;
+    width: 180px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc.sb-3 {
+    bottom: 50px;
+    left: 22px;
+    width: 157px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .home-page-main .app-links-section .rs .spec-desc-text br {
+    display: none;
   }
 }
 /*# sourceMappingURL=home.css.map */

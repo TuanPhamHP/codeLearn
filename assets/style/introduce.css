@@ -10,12 +10,24 @@
      object-fit: cover;
 }
 
+.intro-page-main .intro-banner .home-banner-bg.banner-tb {
+  display: none;
+}
+
+.intro-page-main .intro-banner .home-banner-bg.banner-mb {
+  display: none;
+}
+
 .intro-page-main .intro-demo-section {
   padding: 67px 0 80px 0;
 }
 
 .intro-page-main .intro-demo-section .ls {
   padding-right: 40px;
+}
+
+.intro-page-main .intro-demo-section .ls .img-2 {
+  display: none !important;
 }
 
 .intro-page-main .intro-demo-section .rs .rs-title {
@@ -175,6 +187,323 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .intro-page-main .intro-banner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .intro-page-main .intro-banner .home-banner-bg {
+    display: none;
+  }
+  .intro-page-main .intro-banner .home-banner-bg.banner-tb {
+    display: block;
+    width: 100%;
+  }
+  .intro-page-main .intro-demo-section {
+    padding: 40px 0 20px 0;
+  }
+  .intro-page-main .intro-demo-section .ls {
+    padding-right: 60px;
+    padding-left: 60px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .intro-page-main .intro-demo-section .ls .img-1 {
+    display: none !important;
+  }
+  .intro-page-main .intro-demo-section .ls .img-2 {
+    width: 100%;
+    display: block !important;
+  }
+  .intro-page-main .intro-demo-section .rs .rs-title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .intro-page-main .intro-demo-section .rs .absolute-img {
+    margin-left: 40px;
+  }
+  .intro-page-main .intro-demo-section .rs .card-demo-s {
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+  }
+  .intro-page-main .intro-demo-section .rs .spec-desc {
+    padding: 30px 12px;
+    z-index: 2;
+  }
+  .intro-page-main .questioning-section .step-counter {
+    display: none;
+  }
+  .intro-page-main .questioning-section .rs {
+    padding-top: 8px;
+  }
+  .intro-page-main .questioning-section .rs .step-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 3;
+  }
+  .intro-page-main .questioning-section .rs .step-title::before {
+    top: 8px;
+    left: 18px;
+    font-size: 130px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .intro-page-main .questioning-section .rs .step-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .intro-page-main .questioning-section .rs .nav-tabs .nav-item {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 0;
+  }
+  .intro-page-main .questioning-section .rs .nav-tabs .nav-item.active {
+    font-weight: 700;
+    color: #4643f0;
+  }
+  .intro-page-main .questioning-section .tab-pane {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .intro-page-main .archive-section {
+    padding: 37px 0;
+  }
+  .intro-page-main .archive-section .home-page-section-title {
+    font-size: 36px;
+    line-height: 56px;
+    color: #1b1c20;
+    margin-bottom: 53px;
+  }
+  .intro-page-main .archive-section .each-archive .counter {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 800;
+  }
+  .intro-page-main .archive-section .each-archive .arc-desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .intro-page-main .apps-section {
+    background: #333333;
+    padding: 60px 0 0;
+    background-repeat: no-repeat;
+  }
+  .intro-page-main .apps-section .ls {
+    margin-left: 0 !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .intro-page-main .apps-section .ls .ls-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .intro-page-main .apps-section .ls .ls-title-sm {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+  .intro-page-main .apps-section .ls .links-btn {
+    gap: 24px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .intro-page-main .intro-banner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .intro-page-main .intro-banner .home-banner-bg {
+    display: none;
+  }
+  .intro-page-main .intro-banner .home-banner-bg.banner-tb {
+    display: none;
+  }
+  .intro-page-main .intro-banner .home-banner-bg.banner-mb {
+    display: block;
+    width: 100%;
+  }
+  .intro-page-main .intro-demo-section {
+    padding: 30px 0 20px 0;
+  }
+  .intro-page-main .intro-demo-section .ls {
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .intro-page-main .intro-demo-section .rs .rs-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .intro-page-main .intro-demo-section .rs .card-demo-s {
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .intro-page-main .intro-demo-section .rs .spec-desc {
+    padding: 10px 12px;
+    z-index: 2;
+    height: 100%;
+  }
+  .intro-page-main .intro-demo-section .rs .spec-desc-img {
+    height: 36px;
+    margin-bottom: 12px;
+  }
+  .intro-page-main .intro-demo-section .rs .spec-desc-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .intro-page-main .questioning-section {
+    padding: 24px 0 20px;
+  }
+  .intro-page-main .questioning-section .step-counter {
+    display: none;
+  }
+  .intro-page-main .questioning-section .rs {
+    padding-top: 8px;
+  }
+  .intro-page-main .questioning-section .rs .step-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 3;
+  }
+  .intro-page-main .questioning-section .rs .step-title::before {
+    top: 8px;
+    left: 4px;
+    font-size: 90px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .intro-page-main .questioning-section .rs .step-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .intro-page-main .questioning-section .rs .nav-tabs .nav-item {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 0;
+  }
+  .intro-page-main .questioning-section .rs .nav-tabs .nav-item.active {
+    font-weight: 700;
+    color: #4643f0;
+  }
+  .intro-page-main .questioning-section .ls {
+    padding-top: 18px;
+  }
+  .intro-page-main .questioning-section .tab-pane {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .intro-page-main .archive-section {
+    padding: 37px 0;
+  }
+  .intro-page-main .archive-section .ea-1,
+  .intro-page-main .archive-section .ea-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    height: 60px;
+  }
+  .intro-page-main .archive-section .ea-1 .arc-desc,
+  .intro-page-main .archive-section .ea-3 .arc-desc {
+    font-size: 14px !important;
+  }
+  .intro-page-main .archive-section .ea-1 .counter,
+  .intro-page-main .archive-section .ea-3 .counter {
+    font-size: 24px !important;
+  }
+  .intro-page-main .archive-section .ea-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    height: 60px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  .intro-page-main .archive-section .ea-2 .arc-desc {
+    font-size: 14px !important;
+  }
+  .intro-page-main .archive-section .ea-2 .counter {
+    font-size: 24px !important;
+  }
+  .intro-page-main .archive-section .home-page-section-title {
+    font-size: 36px;
+    line-height: 56px;
+    color: #1b1c20;
+    margin-bottom: 53px;
+  }
+  .intro-page-main .archive-section .each-archive .counter {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 800;
+  }
+  .intro-page-main .archive-section .each-archive .arc-desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .intro-page-main .apps-section {
+    background: #333333;
+    padding: 40px 0 0;
+    background-repeat: no-repeat;
+  }
+  .intro-page-main .apps-section .ls {
+    margin-left: 0 !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .intro-page-main .apps-section .ls .ls-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 18px !important;
+  }
+  .intro-page-main .apps-section .ls .ls-title-sm {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+  .intro-page-main .apps-section .ls .links-btn {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .intro-page-main .apps-section .ls .links-btn img {
+    height: 38px;
+  }
+  .intro-page-main .apps-section .rs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=introduce.css.map */

@@ -22,13 +22,16 @@
   <link rel="stylesheet" href="./assets/style/cdn-style.css" />
   <link rel="stylesheet" href="./assets/style/main.css" />
   <!-- SPEC -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/home.css" />
 </head>
 
 <body>
   <main class="home-page-main">
     <section class="home-page-section home-banner">
-      <img src="./assets/images/home-banner.png" alt="home-banner" class="home-banner-bg pointer">
+      <img src="./assets/images/home-banner.png" alt="home-banner" class="home-banner-bg banner-ds pointer">
+      <img src="./assets/images/home-banner-tb.png" alt="home-banner" class="home-banner-bg banner-tb  pointer">
+      <img src="./assets/images/home-banner-tb.png" alt="home-banner" class="home-banner-bg banner-mb  pointer">
     </section>
     <!--  -->
     <section class="home-page-section app-links-section"
@@ -331,80 +334,105 @@
           Đội ngũ giáo viên
         </h3>
         <div class="d-flex teachers-wr justify-content-between">
-          <div class="each-teacher-card col tc-1">
-            <img src="./assets/images/teacher-avatar-2.png" alt="teacher-avatar"
-              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
-            <p class="teacher-name text-center">
-              Thạc sĩ <br>
-              Nguyễn Thùy Linh
-            </p>
-            <p class="teacher-desc text-center">
-              Cử nhân sư phạm môn Ngữ Văn
-            </p>
-            <p class="teacher-pos text-center">
-              (GV môn Ngữ Văn)
-            </p>
+          <div class="swiper justwatchSwiper px-1">
+            <div class="swiper-wrapper align-items-stretch ">
+              <div class="swiper-slide inner-content-wt ">
+                <div class="each-teacher-card col tc-1">
+                  <img src="./assets/images/teacher-avatar-2.png" alt="teacher-avatar"
+                    class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+                  <p class="teacher-name text-center">
+                    Thạc sĩ <br>
+                    Nguyễn Thùy Linh
+                  </p>
+                  <p class="teacher-desc text-center">
+                    Cử nhân sư phạm môn Ngữ Văn
+                  </p>
+                  <p class="teacher-pos text-center">
+                    (GV môn Ngữ Văn)
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="swiper-slide inner-content-wt ">
+                <div class="each-teacher-card col tc-2">
+                  <img src="./assets/images/teacher-avatar-3.png" alt="teacher-avatar"
+                    class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+                  <p class="teacher-name text-center">
+                    Cô<br>
+                    Nguyễn Hương Giang
+                  </p>
+                  <p class="teacher-desc text-center">
+                    Cử nhân sư phạm môn Tiếng Anh
+                  </p>
+                  <p class="teacher-pos text-center">
+                    (GV môn Tiếng Anh)
+                  </p>
+                </div>
+
+              </div>
+              <!--  -->
+              <div class="swiper-slide inner-content-wt ">
+                <div class="each-teacher-card col tc-3">
+                  <img src="./assets/images/teacher-avatar-4.png" alt="teacher-avatar"
+                    class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+                  <p class="teacher-name text-center">
+                    Thầy<br>
+                    Nguyễn Trung Anh
+                  </p>
+                  <p class="teacher-desc text-center">
+                    Trường THPT FPT
+                  </p>
+                  <p class="teacher-pos text-center">
+                    (GV môn Toán)
+                  </p>
+                </div>
+
+              </div>
+              <!--  -->
+              <div class="swiper-slide inner-content-wt ">
+
+                <div class="each-teacher-card col tc-4">
+                  <img src="./assets/images/teacher-avatar-5.png" alt="teacher-avatar"
+                    class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+                  <p class="teacher-name text-center">
+                    Thạc sĩ <br>
+                    Phan Hồng Hải
+                  </p>
+                  <p class="teacher-desc text-center">
+                    Cử nhân sư phạm môn Hóa Học
+                  </p>
+                  <p class="teacher-pos text-center">
+                    (GV môn Hóa Học)
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="swiper-slide inner-content-wt ">
+
+                <div class="each-teacher-card col tc-5">
+                  <img src="./assets/images/teacher-avatar-1.png" alt="teacher-avatar"
+                    class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
+                  <p class="teacher-name text-center">
+                    Thạc sĩ<br>
+                    Nga Sinh
+                  </p>
+                  <p class="teacher-desc text-center">
+                    Cử nhân sư phạm môn Ngữ Văn
+                  </p>
+                  <p class="teacher-pos text-center">
+                    (GV môn Ngữ Văn)
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="each-teacher-card col tc-2">
-            <img src="./assets/images/teacher-avatar-3.png" alt="teacher-avatar"
-              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
-            <p class="teacher-name text-center">
-              Cô<br>
-              Nguyễn Hương Giang
-            </p>
-            <p class="teacher-desc text-center">
-              Cử nhân sư phạm môn Tiếng Anh
-            </p>
-            <p class="teacher-pos text-center">
-              (GV môn Tiếng Anh)
-            </p>
-          </div>
 
-          <div class="each-teacher-card col tc-3">
-            <img src="./assets/images/teacher-avatar-4.png" alt="teacher-avatar"
-              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
-            <p class="teacher-name text-center">
-              Thầy<br>
-              Nguyễn Trung Anh
-            </p>
-            <p class="teacher-desc text-center">
-              Trường THPT FPT
-            </p>
-            <p class="teacher-pos text-center">
-              (GV môn Toán)
-            </p>
-          </div>
 
-          <div class="each-teacher-card col tc-4">
-            <img src="./assets/images/teacher-avatar-5.png" alt="teacher-avatar"
-              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
-            <p class="teacher-name text-center">
-              Thạc sĩ <br>
-              Phan Hồng Hải
-            </p>
-            <p class="teacher-desc text-center">
-              Cử nhân sư phạm môn Hóa Học
-            </p>
-            <p class="teacher-pos text-center">
-              (GV môn Hóa Học)
-            </p>
-          </div>
 
-          <div class="each-teacher-card col tc-5">
-            <img src="./assets/images/teacher-avatar-1.png" alt="teacher-avatar"
-              class="mw-100 teacher-avatar rounded-circle d-block mx-auto">
-            <p class="teacher-name text-center">
-              Thạc sĩ<br>
-              Nga Sinh
-            </p>
-            <p class="teacher-desc text-center">
-              Cử nhân sư phạm môn Ngữ Văn
-            </p>
-            <p class="teacher-pos text-center">
-              (GV môn Ngữ Văn)
-            </p>
-          </div>
+
+
+
         </div>
       </div>
     </section>
@@ -415,41 +443,53 @@
         <h3 class="home-page-section-title text-center text-white">
           Học sinh nói gì về CoLearn 😍
         </h3>
-        <div class="row mx-0">
-          <div class="col-6 px-4">
-            <div class="comment-card">
-              <div class="text-block bg-white">
-                <h4 class="title text-center mb-3">“Incredible Experience”</h4>
-                <p class="desc text-center">We had an incredible experience working with Mixland and were
-                  impressed they made such a big difference in only three weeks. Our team is so grateful for the
-                  wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+        <div class="swiper commentSwiper">
+          <div class="swiper-wrapper align-items-stretch ">
+
+            <div class="swiper-slide inner-content-wt ">
+              <div class="cmt-col cmt-col-1 px-4">
+                <div class="comment-card">
+                  <div class="text-block bg-white">
+                    <h4 class="title text-center mb-3">“Incredible Experience”</h4>
+                    <p class="desc text-center">We had an incredible experience working with Mixland and were
+                      impressed they made such a big difference in only three weeks. Our team is so grateful for the
+                      wonderful improvements they made and their ability to get familiar with the concept so quickly.
+                    </p>
+                  </div>
+                  <div class="user-block d-flex align-items-center justify-content-center mt-4">
+                    <img src="./assets/images/user-avatar-1.svg" alt="user-avatar" width="62px" height="62px">
+                    <div class="user-info">
+                      <p class="user-name text-white mb-0">Jane Cooper</p>
+                      <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="user-block d-flex align-items-center justify-content-center mt-4">
-                <img src="./assets/images/user-avatar-1.svg" alt="user-avatar" width="62px" height="62px">
-                <div class="user-info">
-                  <p class="user-name text-white mb-0">Jane Cooper</p>
-                  <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
+            </div>
+            <div class="swiper-slide inner-content-wt ">
+              <div class="cmt-col cmt-col-2 px-4">
+                <div class="comment-card">
+                  <div class="text-block bg-white">
+                    <h4 class="title text-center mb-3">“Dependable, Responsive, Professional”</h4>
+                    <p class="desc text-center">Fermin Apps has collaborated with Mixland team for several projects
+                      such as
+                      Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant,
+                      professional
+                      and exceeding our expectations. The team is always thinking beyond.</p>
+                  </div>
+                  <div class="user-block d-flex align-items-center justify-content-center mt-4">
+                    <img src="./assets/images/user-avatar-2.svg" alt="user-avatar" width="62px" height="62px">
+                    <div class="user-info">
+                      <p class="user-name text-white mb-0">Esther Howard</p>
+                      <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-6 px-4">
-            <div class="comment-card">
-              <div class="text-block bg-white">
-                <h4 class="title text-center mb-3">“Dependable, Responsive, Professional”</h4>
-                <p class="desc text-center">Fermin Apps has collaborated with Mixland team for several projects such as
-                  Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional
-                  and exceeding our expectations. The team is always thinking beyond.</p>
-              </div>
-              <div class="user-block d-flex align-items-center justify-content-center mt-4">
-                <img src="./assets/images/user-avatar-2.svg" alt="user-avatar" width="62px" height="62px">
-                <div class="user-info">
-                  <p class="user-name text-white mb-0">Esther Howard</p>
-                  <p class="user-pos text-white mb-0">CEO, ABC Corporation</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div class="cm-swiper-pagination text-center mt-2"></div>
         </div>
       </div>
     </section>
@@ -460,12 +500,28 @@
           Báo chí nói về CoLearn
         </h3>
         <div class="d-flex list-news-logo align-items-center px-3">
-          <img src="./assets/images/news-1.png" alt="news-logo" class="news-logo-img">
-          <img src="./assets/images/news-logo-2.png" alt="news-logo" class="news-logo-img">
-          <img src="./assets/images/news-logo-3.png" alt="news-logo" class="news-logo-img">
-          <img src="./assets/images/news-logo-4.png" alt="news-logo" class="news-logo-img">
-          <img src="./assets/images/news-logo-5.png" alt="news-logo" class="news-logo-img">
-          <img src="./assets/images/news-logo-6.png" alt="news-logo" class="news-logo-img">
+          <div class="swiper brandSwiper px-1">
+            <div class="swiper-wrapper align-items-center ">
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-1.png" alt="news-logo" class="news-logo-img">
+              </div>
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-logo-2.png" alt="news-logo" class="news-logo-img">
+              </div>
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-logo-3.png" alt="news-logo" class="news-logo-img">
+              </div>
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-logo-4.png" alt="news-logo" class="news-logo-img">
+              </div>
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-logo-5.png" alt="news-logo" class="news-logo-img">
+              </div>
+              <div class="swiper-slide inner-content-wt ">
+                <img src="./assets/images/news-logo-6.png" alt="news-logo" class="news-logo-img">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -477,6 +533,7 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/js/home.js"></script>
 
 </html>
