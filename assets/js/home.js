@@ -79,129 +79,92 @@ document.addEventListener('DOMContentLoaded', function () {
 			previewLh3.setAttribute('src', `./assets/images/${listLh3[cIdx3 + 1].getAttribute('preview-image')}`);
 		}
 	}, timeSet);
-	const currentW = window.outerWidth;
-	if (currentW > 991) {
-		var swiper = new Swiper('.justwatchSwiper', {
-			slidesPerView: 5,
-			spaceBetween: 24,
-			keyboard: {
-				enabled: true,
+
+	var swiper = new Swiper('.justwatchSwiper', {
+		slidesPerView: 5,
+		spaceBetween: 24,
+		breakpoints: {
+			992: {
+				slidesPerView: 5,
+				spaceBetween: 24,
 			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
+			520: {
+				slidesPerView: 3,
+				spaceBetween: 24,
 			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 0,
 			},
-		});
-		var cmswiper = new Swiper('.commentSwiper', {
-			slidesPerView: 2,
-			spaceBetween: 24,
-			keyboard: {
-				enabled: true,
+		},
+		keyboard: {
+			enabled: true,
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+	var bmswiper = new Swiper('.brandSwiper', {
+		slidesPerView: 6,
+		spaceBetween: 12,
+		breakpoints: {
+			992: {
+				slidesPerView: 6,
+				spaceBetween: 12,
 			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
+			520: {
+				slidesPerView: 3,
+				spaceBetween: 24,
 			},
-			pagination: {
-				el: '.cm-swiper-pagination',
-				clickable: true,
+			320: {
+				slidesPerView: 3,
+				spaceBetween: 12,
 			},
-		});
-		var bmswiper = new Swiper('.brandSwiper', {
-			slidesPerView: 6,
-			spaceBetween: 12,
-			keyboard: {
-				enabled: true,
+		},
+		keyboard: {
+			enabled: true,
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+	var cmswiper = new Swiper('.commentSwiper', {
+		slidesPerView: 2,
+		spaceBetween: 24,
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 24,
 			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
+			520: {
+				slidesPerView: 2,
+				spaceBetween: 24,
 			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 12,
 			},
-		});
-	} else if (currentW > 520) {
-		var swiper = new Swiper('.justwatchSwiper', {
-			slidesPerView: 3,
-			spaceBetween: 24,
-			keyboard: {
-				enabled: true,
-			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-		var cmswiper = new Swiper('.commentSwiper', {
-			slidesPerView: 2,
-			spaceBetween: 24,
-			keyboard: {
-				enabled: true,
-			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.cm-swiper-pagination',
-				clickable: true,
-			},
-		});
-	} else {
-		var swiper = new Swiper('.justwatchSwiper', {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			keyboard: {
-				enabled: true,
-			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-		var cmswiper = new Swiper('.commentSwiper', {
-			slidesPerView: 1,
-			spaceBetween: 24,
-			keyboard: {
-				enabled: true,
-			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.cm-swiper-pagination',
-				clickable: true,
-			},
-		});
-		var bmswiper = new Swiper('.brandSwiper', {
-			slidesPerView: 3,
-			spaceBetween: 12,
-			keyboard: {
-				enabled: true,
-			},
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.br-swiper-pagination',
-				clickable: true,
-			},
-		});
-	}
+		},
+		keyboard: {
+			enabled: true,
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.cm-swiper-pagination',
+			clickable: true,
+		},
+	});
 });

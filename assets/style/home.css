@@ -1132,6 +1132,9 @@
   .home-page-main .comments-section .cm-swiper-pagination .swiper-pagination-bullet {
     background-color: #fff !important;
   }
+  .home-page-main .lib-n-supplies-section .block-card {
+    min-height: 375px;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -1202,6 +1205,9 @@
   }
   .home-page-main .app-links-section .rs .spec-desc-text br {
     display: none;
+  }
+  .home-page-main .lib-n-supplies-section .block-card {
+    min-height: 340px;
   }
 }
 /*# sourceMappingURL=home.css.map */
